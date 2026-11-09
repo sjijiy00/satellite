@@ -1,0 +1,145 @@
+{
+  "version": "camera-gazetteer-2026-10-29.2",
+  "checked_on": "2026-10-29",
+  "regions": [
+    {
+      "id": "chungnam",
+      "name": "충청남도",
+      "aliases": [
+        "충청남도",
+        "충남"
+      ],
+      "extents_dms": [
+        [
+          125,
+          32,
+          21
+        ],
+        [
+          35,
+          58,
+          30
+        ],
+        [
+          127,
+          38,
+          31
+        ],
+        [
+          37,
+          3,
+          44
+        ]
+      ],
+      "source": "충청남도 2015 도정백서, 일반현황 인쇄 9쪽(PDF 47쪽), 충남의 위치 극점표",
+      "source_url": "https://www.chungnam.go.kr/downloadUtil.do?filename=2015_whitebook.pdf#page=47",
+      "source_year": "2015",
+      "source_sha256": "ac1fd94f3a5264c766af3cf60c9d6f1f4da11c5e11511844fe672462c49ade82",
+      "note": "도청 공개 동서남북 극점을 바깥쪽으로 반올림한 포함 사각형입니다. 바다·다른 행정구역도 포함하며 최신 법정경계 폴리곤이 아닙니다.",
+      "usage": "공개 극점의 수치 사실만 지도 화면 맞춤에 사용. 원문 지도·설명문을 복제하지 않음. 최신 법정경계/AOI 아님."
+    },
+    {
+      "id": "sangju",
+      "name": "경상북도 상주시",
+      "aliases": [
+        "경상북도 상주시",
+        "경북 상주시",
+        "상주시"
+      ],
+      "extents_dms": [
+        [
+          127,
+          47,
+          55
+        ],
+        [
+          36,
+          14,
+          6
+        ],
+        [
+          128,
+          20,
+          28
+        ],
+        [
+          36,
+          39,
+          14
+        ]
+      ],
+      "source": "상주시 기본현황 지역특성, 경도 및 위도 극점표",
+      "source_url": "https://www.sangju.go.kr/page/16483/11655.tc",
+      "source_year": "웹 공개 자료(확인일 기준)",
+      "note": "시청 공개 극점의 포함 사각형입니다. 최신 법정경계 폴리곤이 아닙니다.",
+      "usage": "공개 극점의 수치 사실만 지도 화면 맞춤에 사용. 원문 지도·설명문을 복제하지 않음. 최신 법정경계/AOI 아님."
+    },
+    {
+      "id": "yeongcheon",
+      "name": "경상북도 영천시 (영천군 옛 지명 참고)",
+      "aliases": [
+        "영천군",
+        "영천시",
+        "경상북도 영천군",
+        "경북 영천군",
+        "경상북도 영천시",
+        "경북 영천시"
+      ],
+      "extents_dms": [
+        [
+          128,
+          41,
+          41
+        ],
+        [
+          35,
+          50,
+          3
+        ],
+        [
+          129,
+          8,
+          42
+        ],
+        [
+          36,
+          10,
+          54
+        ]
+      ],
+      "source": "영천시청 위치와기후 극점표",
+      "source_url": "https://www.yc.go.kr/portal/contents.do?mId=0402010000",
+      "source_year": "웹 공개 자료(확인일 기준)",
+      "history_url": "https://www.yc.go.kr/portal/contents.do?mId=0403040000",
+      "terms_url": "https://www.yc.go.kr/portal/contents.do?mId=0704000000",
+      "usage": "시청 저작권 정책 확인: 공공누리 표시 자료만 해당 조건으로 자유이용. 이 페이지의 공공누리 표시를 확인하지 못해 원문 지도·설명문은 복제하지 않고 극점 수치 사실만 전사함.",
+      "note": "영천군은 1995년 영천시와 통합된 옛 행정명입니다. 현재 영천시 공개 극점으로 화면만 이동하며 옛 군 경계의 복원이나 분석 AOI가 아닙니다."
+    }
+  ],
+  "ambiguous": {
+    "광주": [
+      {
+        "id": "gwangju-metro",
+        "name": "광주광역시"
+      },
+      {
+        "id": "gwangju-gyeonggi",
+        "name": "경기도 광주시"
+      }
+    ],
+    "중구": [
+      {
+        "id": "junggu-seoul",
+        "name": "서울특별시 중구"
+      },
+      {
+        "id": "junggu-busan",
+        "name": "부산광역시 중구"
+      },
+      {
+        "id": "junggu-other",
+        "name": "그 밖의 시·도 중구 — 지도에서 직접 지정"
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+import {test,expect,openBandPanel,openComparison} from './runtime';
+
+test('실제 검색: 지도 AOI, 메타데이터, 촬영 범위, 페이지 이동',async({page},testInfo)=>{
+  test.skip(process.env.LIVE_STAC!=='1','실제 제공처 검색은 LIVE_STAC=1 별도 실행');
+  const failedResponses:string[]=[];page.on('response',r=>{if(r.status()>=400){const u=new URL(r.url());failedResponses.push(`${r.status()} ${u.origin}${u.pathname.replace(/[a-f0-9]{32}/g,'[id]')}`);}});
+  const errors:string[]=[];page.on('pageerror',e=>{errors.push(e.message);console.log('PAGE ERROR',e.message);});
+  page.on('console',msg=>{if(msg.type()==='error')console.log('BROWSER ERROR',msg.text());});
+  await page.goto('/');await page.getByLabel('시작일',{exact:true}).fill('2025-07-01');await page.getByLabel('종료일',{exact:true}).fill('2025-07-31');
+  await page.getByLabel('분석 목적',{exact:true}).fill('충남 집중호우 침수 분석');await page.getByLabel('목적 직접 선택',{exact:false}).selectOption('flood');await page.getByRole('button',{name:'직접 입력으로 계속',exact:true}).click();
+  const map=page.getByTestId('map');
+  await expect(page.getByRole('button',{name:'▧ 영역 선택'})).toBeEnabled({timeout:20000});
+  await page.getByRole('button',{name:'▧ 영역 선택'}).click();
+  const bounds=await map.boundingBox();
+  if(!bounds)throw new Error('map missing');
+  await page.mouse.click(bounds.x+bounds.width*.42,bounds.y+bounds.height*.4);
+  await page.mouse.click(bounds.x+bounds.width*.52,bounds.y+bounds.height*.55);
+  await expect(page.getByLabel('서쪽 경도')).not.toHaveValue('');
+  // Set reproducible AOI through UI after proving map selection writes coordinates.
+  await page.getByRole('button',{name:'충남 예시 영역'}).click();
+  await page.getByLabel('시작일',{exact:true}).fill('2025-05-01');
+  await page.getByLabel('최대 조회 개수').selectOption('25');
+  await page.getByLabel('위성 선택',{exact:true}).selectOption('manual');
+  const responsePromise=page.waitForResponse(r=>r.url().endsWith('/api/search')&&r.request().method()==='POST');
+  await page.getByRole('button',{name:'위성영상 검색',exact:false}).click();
+  const response=await responsePromise;
+  expect(response.status()).toBe(200);
+  const data=await response.json();
+  expect(data.source).toBe('live-stac');expect(data.items.length).toBe(25);
+  const primary=page.getByTestId('primary-results');
+  const other=page.getByTestId('other-results');
+  const card=primary.getByTestId('scene-card').first();
+  const first=data.items.find((s:{purpose_plan:{group:string}})=>s.purpose_plan.group==='primary');
+  await expect(card).toContainText(first.id);
+  await expect(card).toContainText(first.datetime.replace('T',' ').replace('Z',''));
+  await expect(card).toContainText(first.instruments.join(' · '));
+  await expect(card).toContainText(first.scene_cloud_cover.toLocaleString('ko-KR',{maximumFractionDigits:2})+'%');
+  await expect(page.getByTestId('footprint-count')).toHaveText('25개 범위');
+  await expect(card.getByRole('button',{name:'지도에서 선택'})).toHaveAttribute('aria-pressed','true');
+  await expect(other).toContainText('landsat');
+  await openComparison(page);
+  await expect(page.getByRole('region',{name:'여러 영상 비교와 해석'})).toContainText('현재 결론: 판정 보류');await page.getByRole('link',{name:'데이터 수집으로 돌아가기',exact:true}).click();
+  await expect(card.getByTestId('band-green')).toBeChecked();
+  await expect(card.getByTestId('band-swir16')).toBeChecked();
+  await expect(card.getByTestId('band-visual')).not.toBeChecked();
+  await openBandPanel(card);await card.getByRole('button',{name:'전체 선택',exact:true}).click();
+  expect(await card.getByRole('checkbox').count()).toBe(await card.locator('input[type=checkbox]:checked').count());
+  await card.getByRole('button',{name:'선택 해제',exact:true}).click();
+  expect(await card.locator('input[type=checkbox]:checked').count()).toBe(0);
+  await card.getByRole('button',{name:'목적 추천으로 복원'}).click();
+  await expect(card.getByTestId('band-green')).toBeChecked();
+  await primary.getByRole('button',{name:'다음',exact:true}).click();
+  await expect(primary.getByTestId('scene-card').first()).toContainText(data.items.filter((s:{purpose_plan:{group:string}})=>s.purpose_plan.group==='primary')[10].id);
+  await page.getByRole('button',{name:'선택 영역으로 이동'}).click();
+  await page.waitForLoadState('networkidle');
+  await page.locator('.map-panel').screenshot({path:'test-results/live-map.png'});
+  await page.screenshot({path:'test-results/live-search.png',fullPage:true});
+  console.log('HTTP errors with URL (entire live test)',failedResponses);
+  await testInfo.attach('live-http-errors',{body:failedResponses.join('\n')||'No HTTP >=400 observed',contentType:'text/plain'});
+  expect(errors).toEqual([]);
+});
+
+test('합성 오류 응답: 미선택, 날짜 오류, API 실패, 빈 결과',async({page})=>{
+  await page.goto('/');await page.getByLabel('시작일',{exact:true}).fill('2025-07-01');await page.getByLabel('종료일',{exact:true}).fill('2025-07-31');
+  await page.getByRole('button',{name:'위성영상 검색',exact:false}).click();
+  await expect(page.locator('.error[role="alert"]')).toContainText('관심 지역');
+  await page.getByRole('button',{name:'충남 예시 영역'}).click();
+  await page.getByLabel('시작일',{exact:true}).fill('2025-08-01');
+  await page.getByRole('button',{name:'위성영상 검색',exact:false}).click();
+  await expect(page.locator('.error[role="alert"]')).toContainText('시작일');
+  await page.getByLabel('시작일',{exact:true}).fill('2025-07-01');
+  await page.route('**/api/search',route=>route.fulfill({status:504,json:{error:{code:'TEST_ONLY',message:'테스트용 API 응답 지연'}}}));
+  await page.getByRole('button',{name:'위성영상 검색',exact:false}).click();
+  await expect(page.locator('.error[role="alert"]')).toContainText('테스트용 API 응답 지연');
+  await page.unroute('**/api/search');
+  await page.route('**/api/search',route=>route.fulfill({json:{source:'TEST_ONLY_SYNTHETIC',items:[],returned:0,truncated:false,limit:25,ranking:'테스트용',notice:'테스트용',query:{bbox:[126.5,36.3,127,36.8],start_date:'2025-07-01',end_date:'2025-07-31'}}}));
+  await page.getByRole('button',{name:'위성영상 검색',exact:false}).click();
+  await expect(page.getByText('검색 결과가 없습니다',{exact:true})).toBeVisible();
+});
+
+test('모바일 화면은 가로 스크롤 없이 입력 가능',async({page})=>{
+  await page.setViewportSize({width:390,height:844});
+  await page.goto('/');await page.getByLabel('시작일',{exact:true}).fill('2025-07-01');await page.getByLabel('종료일',{exact:true}).fill('2025-07-31');
+  await expect(page.getByRole('heading',{level:1})).toBeVisible();
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
+});

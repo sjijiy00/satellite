@@ -1,0 +1,1665 @@
+{
+  "items": [
+    {
+      "id": "G_TEST_ONLY_L30-LPCLOUD",
+      "collection": "hls-l30-002",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                126.0,
+                36.0
+              ],
+              [
+                127.0,
+                36.0
+              ],
+              [
+                127.0,
+                37.0
+              ],
+              [
+                126.0,
+                37.0
+              ],
+              [
+                126.0,
+                36.0
+              ]
+            ]
+          ]
+        ]
+      },
+      "source_product": {
+        "original_id": "HLS.L30.T99ZZZ.2025204T021054.v2.0",
+        "version": "2.0",
+        "family": "hls-l30-002"
+      },
+      "datetime": "2025-07-23T02:10:54Z",
+      "platform": null,
+      "source_platform": null,
+      "instruments": [
+        "OLI / OLI-2 input family"
+      ],
+      "resolution_m": [
+        30.0
+      ],
+      "band_details": [
+        {
+          "asset": "B02",
+          "bands": [
+            "blue"
+          ],
+          "resolution_m": [
+            30.0
+          ]
+        },
+        {
+          "asset": "B03",
+          "bands": [
+            "green"
+          ],
+          "resolution_m": [
+            30.0
+          ]
+        },
+        {
+          "asset": "B04",
+          "bands": [
+            "red"
+          ],
+          "resolution_m": [
+            30.0
+          ]
+        },
+        {
+          "asset": "B05",
+          "bands": [
+            "nir"
+          ],
+          "resolution_m": [
+            30.0
+          ]
+        },
+        {
+          "asset": "B06",
+          "bands": [
+            "swir16"
+          ],
+          "resolution_m": [
+            30.0
+          ]
+        },
+        {
+          "asset": "B07",
+          "bands": [
+            "swir22"
+          ],
+          "resolution_m": [
+            30.0
+          ]
+        }
+      ],
+      "bands": [
+        "blue",
+        "green",
+        "nir",
+        "red",
+        "swir16",
+        "swir22"
+      ],
+      "scene_cloud_cover": 42.0,
+      "processing_level": "HLS v2.0 NBAR",
+      "provider": "NASA CMR / LP DAAC",
+      "provider_id": "nasa-cmr",
+      "product_id": "hls-l30-002",
+      "remote_collection": "C2021957657-LPCLOUD",
+      "sensor_ids": [],
+      "product_type": "HLSL30 v2.0 \u00b7 \uad11\ud559 NBAR \uc9c0\ud45c\ubc18\uc0ac\ub3c4",
+      "end_datetime": "2025-07-23T02:11:18Z",
+      "geometry_role": "product_tile_extent",
+      "temporal_role": null,
+      "sar": null,
+      "output_grid": "HLS UTM/MGRS 30 m \u00b7 \uacbd\uacc4 \ub0b4 \uc720\ud6a8 \ud53d\uc140 \ubcf4\uc7a5 \uc544\ub2d8",
+      "native_resolution": "Landsat OLI \ubc18\uc0ac\ub3c4 30 m \uc6d0\uc790\ub8cc \uacc4\uc5f4; \uac1c\ubcc4 \uc785\ub825 \ud50c\ub7ab\ud3fc\uc740 CMR JSON \ubbf8\uc81c\uacf5",
+      "hls": {
+        "short_name": "HLSL30",
+        "version": "2.0",
+        "original_id": "HLS.L30.T99ZZZ.2025204T021054.v2.0",
+        "doi": "10.5067/HLS/HLSL30.002",
+        "source": "https://hls.gsfc.nasa.gov/products-description/l30/",
+        "scale_note": "\ubc18\uc0ac\ub3c4 scale=0.0001. Fmask \ube44\ud2b8 QA\ub294 S2 SCL\uacfc \ub2e4\ub984; \ud53d\uc140 QA\u00b7\ubd84\uc11d\u00b7\ud569\uc131\u00b7ML \ubbf8\uc9c0\uc6d0.",
+        "temporal_note": "CMR \uad00\uce21 \uc2dc\uc791/\uc885\ub8cc \uba54\ud0c0\ub370\uc774\ud130. \ud30c\uc77c\uba85 \uc2dc\uac01\uc744 \ud0c0\uc77c \ub0b4 \ubaa8\ub4e0 \ud53d\uc140\uc758 \ucd2c\uc601\uc2dc\uac01\uc73c\ub85c \uac04\uc8fc\ud558\uc9c0 \uc54a\uc74c.",
+        "not_surface_temperature": true
+      },
+      "support": {
+        "search": true,
+        "processing": "\uac80\uc0c9\u00b7\uba54\ud0c0\ub370\uc774\ud130\ub9cc \uc9c0\uc6d0; \uc571 \ub0b4 \ud53d\uc140 \ucc98\ub9ac \ubbf8\uc9c0\uc6d0",
+        "file_access": "authentication_required",
+        "access_verified": false
+      },
+      "source_url": "https://cmr.earthdata.nasa.gov/search/granules.json?concept_id=G_TEST_ONLY_L30-LPCLOUD&page_size=1",
+      "thumbnail": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/HLSL30.020/HLS.L30.T99ZZZ.2025204T021054.v2.0/HLS.L30.T99ZZZ.2025204T021054.v2.0.jpg",
+      "preview_diagnostic": {
+        "status": "unchecked",
+        "has_candidate": true,
+        "message": "\ubbf8\ub9ac\ubcf4\uae30 \ub9c1\ud06c \uc788\uc74c \u00b7 \uc2e4\uc81c \uc811\uadfc\uc740 \ubbf8\uac80\uc0ac"
+      },
+      "download_assets": [
+        {
+          "key": "B02",
+          "title": "B02 \u00b7 HLS 30 m \ubc18\uc0ac\ub3c4/\uad11\ud559 \ubc34\ub4dc",
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T99ZZZ.2025204T021054.v2.0/HLS.L30.T99ZZZ.2025204T021054.v2.0.B02.tif",
+          "filename": "HLS.L30.T99ZZZ.2025204T021054.v2.0.B02.tif",
+          "size_bytes": null,
+          "provider": "NASA CMR / LP DAAC",
+          "signing_required": false,
+          "common_names": [
+            "blue"
+          ],
+          "roles": [
+            "data"
+          ],
+          "raster_metadata": [
+            {
+              "scale": 0.0001,
+              "offset": 0,
+              "unit": "unitless"
+            }
+          ],
+          "media_type": "image/tiff",
+          "direct_url": null,
+          "requester_pays": false,
+          "authentication_required": true,
+          "access_verified": false,
+          "access_status": "authentication_required",
+          "access_note": "\uc81c\uacf5\ucc98 \uacc4\uc815 \uc778\uc99d \ud544\uc694 \u00b7 \ub2e4\uc6b4\ub85c\ub4dc \ubbf8\uac80\uc99d"
+        },
+        {
+          "key": "B03",
+          "title": "B03 \u00b7 HLS 30 m \ubc18\uc0ac\ub3c4/\uad11\ud559 \ubc34\ub4dc",
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T99ZZZ.2025204T021054.v2.0/HLS.L30.T99ZZZ.2025204T021054.v2.0.B03.tif",
+          "filename": "HLS.L30.T99ZZZ.2025204T021054.v2.0.B03.tif",
+          "size_bytes": null,
+          "provider": "NASA CMR / LP DAAC",
+          "signing_required": false,
+          "common_names": [
+            "green"
+          ],
+          "roles": [
+            "data"
+          ],
+          "raster_metadata": [
+            {
+              "scale": 0.0001,
+              "offset": 0,
+              "unit": "unitless"
+            }
+          ],
+          "media_type": "image/tiff",
+          "direct_url": null,
+          "requester_pays": false,
+          "authentication_required": true,
+          "access_verified": false,
+          "access_status": "authentication_required",
+          "access_note": "\uc81c\uacf5\ucc98 \uacc4\uc815 \uc778\uc99d \ud544\uc694 \u00b7 \ub2e4\uc6b4\ub85c\ub4dc \ubbf8\uac80\uc99d"
+        },
+        {
+          "key": "B04",
+          "title": "B04 \u00b7 HLS 30 m \ubc18\uc0ac\ub3c4/\uad11\ud559 \ubc34\ub4dc",
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T99ZZZ.2025204T021054.v2.0/HLS.L30.T99ZZZ.2025204T021054.v2.0.B04.tif",
+          "filename": "HLS.L30.T99ZZZ.2025204T021054.v2.0.B04.tif",
+          "size_bytes": null,
+          "provider": "NASA CMR / LP DAAC",
+          "signing_required": false,
+          "common_names": [
+            "red"
+          ],
+          "roles": [
+            "data"
+          ],
+          "raster_metadata": [
+            {
+              "scale": 0.0001,
+              "offset": 0,
+              "unit": "unitless"
+            }
+          ],
+          "media_type": "image/tiff",
+          "direct_url": null,
+          "requester_pays": false,
+          "authentication_required": true,
+          "access_verified": false,
+          "access_status": "authentication_required",
+          "access_note": "\uc81c\uacf5\ucc98 \uacc4\uc815 \uc778\uc99d \ud544\uc694 \u00b7 \ub2e4\uc6b4\ub85c\ub4dc \ubbf8\uac80\uc99d"
+        },
+        {
+          "key": "B05",
+          "title": "B05 \u00b7 HLS 30 m \ubc18\uc0ac\ub3c4/\uad11\ud559 \ubc34\ub4dc",
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T99ZZZ.2025204T021054.v2.0/HLS.L30.T99ZZZ.2025204T021054.v2.0.B05.tif",
+          "filename": "HLS.L30.T99ZZZ.2025204T021054.v2.0.B05.tif",
+          "size_bytes": null,
+          "provider": "NASA CMR / LP DAAC",
+          "signing_required": false,
+          "common_names": [
+            "nir"
+          ],
+          "roles": [
+            "data"
+          ],
+          "raster_metadata": [
+            {
+              "scale": 0.0001,
+              "offset": 0,
+              "unit": "unitless"
+            }
+          ],
+          "media_type": "image/tiff",
+          "direct_url": null,
+          "requester_pays": false,
+          "authentication_required": true,
+          "access_verified": false,
+          "access_status": "authentication_required",
+          "access_note": "\uc81c\uacf5\ucc98 \uacc4\uc815 \uc778\uc99d \ud544\uc694 \u00b7 \ub2e4\uc6b4\ub85c\ub4dc \ubbf8\uac80\uc99d"
+        },
+        {
+          "key": "B06",
+          "title": "B06 \u00b7 HLS 30 m \ubc18\uc0ac\ub3c4/\uad11\ud559 \ubc34\ub4dc",
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T99ZZZ.2025204T021054.v2.0/HLS.L30.T99ZZZ.2025204T021054.v2.0.B06.tif",
+          "filename": "HLS.L30.T99ZZZ.2025204T021054.v2.0.B06.tif",
+          "size_bytes": null,
+          "provider": "NASA CMR / LP DAAC",
+          "signing_required": false,
+          "common_names": [
+            "swir16"
+          ],
+          "roles": [
+            "data"
+          ],
+          "raster_metadata": [
+            {
+              "scale": 0.0001,
+              "offset": 0,
+              "unit": "unitless"
+            }
+          ],
+          "media_type": "image/tiff",
+          "direct_url": null,
+          "requester_pays": false,
+          "authentication_required": true,
+          "access_verified": false,
+          "access_status": "authentication_required",
+          "access_note": "\uc81c\uacf5\ucc98 \uacc4\uc815 \uc778\uc99d \ud544\uc694 \u00b7 \ub2e4\uc6b4\ub85c\ub4dc \ubbf8\uac80\uc99d"
+        },
+        {
+          "key": "B07",
+          "title": "B07 \u00b7 HLS 30 m \ubc18\uc0ac\ub3c4/\uad11\ud559 \ubc34\ub4dc",
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T99ZZZ.2025204T021054.v2.0/HLS.L30.T99ZZZ.2025204T021054.v2.0.B07.tif",
+          "filename": "HLS.L30.T99ZZZ.2025204T021054.v2.0.B07.tif",
+          "size_bytes": null,
+          "provider": "NASA CMR / LP DAAC",
+          "signing_required": false,
+          "common_names": [
+            "swir22"
+          ],
+          "roles": [
+            "data"
+          ],
+          "raster_metadata": [
+            {
+              "scale": 0.0001,
+              "offset": 0,
+              "unit": "unitless"
+            }
+          ],
+          "media_type": "image/tiff",
+          "direct_url": null,
+          "requester_pays": false,
+          "authentication_required": true,
+          "access_verified": false,
+          "access_status": "authentication_required",
+          "access_note": "\uc81c\uacf5\ucc98 \uacc4\uc815 \uc778\uc99d \ud544\uc694 \u00b7 \ub2e4\uc6b4\ub85c\ub4dc \ubbf8\uac80\uc99d"
+        },
+        {
+          "key": "Fmask",
+          "title": "Fmask \u00b7 Fmask \ube44\ud2b8 \ud488\uc9c8 \ub9c8\uc2a4\ud06c \u00b7 S2 SCL\uacfc \ub2e4\ub978 \uc2a4\ud0a4\ub9c8, \uc571 \ubbf8\uac80\uc0ac",
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSL30.020/HLS.L30.T99ZZZ.2025204T021054.v2.0/HLS.L30.T99ZZZ.2025204T021054.v2.0.Fmask.tif",
+          "filename": "HLS.L30.T99ZZZ.2025204T021054.v2.0.Fmask.tif",
+          "size_bytes": null,
+          "provider": "NASA CMR / LP DAAC",
+          "signing_required": false,
+          "common_names": [],
+          "roles": [
+            "quality"
+          ],
+          "raster_metadata": [],
+          "media_type": "image/tiff",
+          "direct_url": null,
+          "requester_pays": false,
+          "authentication_required": true,
+          "access_verified": false,
+          "access_status": "authentication_required",
+          "access_note": "\uc81c\uacf5\ucc98 \uacc4\uc815 \uc778\uc99d \ud544\uc694 \u00b7 \ub2e4\uc6b4\ub85c\ub4dc \ubbf8\uac80\uc99d"
+        }
+      ],
+      "overlap_percent": 100,
+      "purpose_plan": {
+        "purpose": "vegetation",
+        "label": "\uc2dd\uc0dd \ubd84\uc11d",
+        "analysis": "NDVI = (NIR \u2212 Red) / (NIR + Red)",
+        "product_status": "met",
+        "profile_id": "hls_l30",
+        "rule_version": "sensor-purpose-2026-10-30.2",
+        "analysis_keys": [
+          "B04",
+          "B05",
+          "Fmask"
+        ],
+        "default_keys": [
+          "B04",
+          "B05",
+          "Fmask",
+          "B03"
+        ],
+        "visual_keys": [
+          "B05",
+          "B04",
+          "B03",
+          "Fmask"
+        ],
+        "visual_mapping": {
+          "nir": "B05",
+          "red": "B04",
+          "green": "B03"
+        },
+        "visual_title": "\uc2dd\uc0dd \uac15\uc870 \uac00\uc0c9\uc0c1",
+        "visual_note": "QGIS/ArcGIS RGB \ucc44\ub110\uc5d0 NIR \u2192 Red \u2192 Green \uc21c\uc11c\ub85c \uc9c0\uc815\ud569\ub2c8\ub2e4. NDVI \uacc4\uc0b0 \uacb0\uacfc\ub294 \ubcc4\ub3c4\ub85c \ub2e8\uc77c\ubc34\ub4dc \uc758\uc0ac\uc0c9\uc0c1\uc73c\ub85c \ud45c\uc2dc\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.",
+        "missing_bands": [],
+        "visual_missing": [],
+        "group": "other",
+        "group_reason": "\ub2e4\ub978 \uc704\uc131\uc758 \ub300\uc548 \ud6c4\ubcf4",
+        "preprocessing": "\ubc18\uc0ac\ub3c4/\uc628\ub3c4 scale\u00b7offset, NoData\u00b7\ud488\uc9c8 \ub9c8\uc2a4\ud06c\ub97c \ud655\uc778\ud558\uace0 \uc11c\ub85c \ub2e4\ub978 \ud574\uc0c1\ub3c4\uc758 \uaca9\uc790\ub97c \ub9de\ucd98 \ub4a4 \uacc4\uc0b0\ud558\uc138\uc694. \uc5ec\uae30\uc11c\ub294 \uc870\ud569\ub9cc \ucd94\ucc9c\ud558\uba70 \uc9c0\uc218\u00b7\ud569\uc131\uc601\uc0c1\uc740 \uc0dd\uc131\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4."
+      },
+      "pixel_quality": {
+        "status": "not_checked",
+        "message": "\uc2e4\uc81c \uc7a5\uba74 \ud53d\uc140 QA \ubbf8\uac80\uc0ac"
+      },
+      "evaluation": {
+        "status": "\ud310\uc815 \ubcf4\ub958",
+        "label": "\uc608\ube44 \uc801\ud569\uc131 \ud3c9\uac00",
+        "days_from_start": 3,
+        "sensor_match": true,
+        "sensor_reason": "NDVI = (NIR \u2212 Red) / (NIR + Red)",
+        "limitations": [
+          "\ud53d\uc140 \uac80\uc0ac\ub97c \uc218\ud589\ud558\uc9c0 \uc54a\uc558\uc2b5\ub2c8\ub2e4.",
+          "\uc7a5\uba74 \uad6c\ub984\ub7c9\uc740 AOI \uad6c\ub984\ub7c9\uc774 \uc544\ub2d9\ub2c8\ub2e4.",
+          "\ucd2c\uc601 \ubc94\uc704 \uc911\ucca9\uc740 \uc720\ud6a8 \uad00\uce21\ub960\uc774 \uc544\ub2d9\ub2c8\ub2e4."
+        ]
+      }
+    },
+    {
+      "id": "G_TEST_ONLY_S30-LPCLOUD",
+      "collection": "hls-s30-002",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                126.0,
+                36.0
+              ],
+              [
+                127.0,
+                36.0
+              ],
+              [
+                127.0,
+                37.0
+              ],
+              [
+                126.0,
+                37.0
+              ],
+              [
+                126.0,
+                36.0
+              ]
+            ]
+          ]
+        ]
+      },
+      "source_product": {
+        "original_id": "HLS.S30.T99ZZZ.2025204T021054.v2.0",
+        "version": "2.0",
+        "family": "hls-s30-002"
+      },
+      "datetime": "2025-07-23T02:10:54Z",
+      "platform": null,
+      "source_platform": null,
+      "instruments": [
+        "MSI input family"
+      ],
+      "resolution_m": [
+        30.0
+      ],
+      "band_details": [
+        {
+          "asset": "B02",
+          "bands": [
+            "blue"
+          ],
+          "resolution_m": [
+            30.0
+          ]
+        },
+        {
+          "asset": "B03",
+          "bands": [
+            "green"
+          ],
+          "resolution_m": [
+            30.0
+          ]
+        },
+        {
+          "asset": "B04",
+          "bands": [
+            "red"
+          ],
+          "resolution_m": [
+            30.0
+          ]
+        },
+        {
+          "asset": "B08",
+          "bands": [
+            "nir"
+          ],
+          "resolution_m": [
+            30.0
+          ]
+        },
+        {
+          "asset": "B8A",
+          "bands": [
+            "nir08"
+          ],
+          "resolution_m": [
+            30.0
+          ]
+        },
+        {
+          "asset": "B11",
+          "bands": [
+            "swir16"
+          ],
+          "resolution_m": [
+            30.0
+          ]
+        },
+        {
+          "asset": "B12",
+          "bands": [
+            "swir22"
+          ],
+          "resolution_m": [
+            30.0
+          ]
+        }
+      ],
+      "bands": [
+        "blue",
+        "green",
+        "nir",
+        "nir08",
+        "red",
+        "swir16",
+        "swir22"
+      ],
+      "scene_cloud_cover": 42.0,
+      "processing_level": "HLS v2.0 NBAR",
+      "provider": "NASA CMR / LP DAAC",
+      "provider_id": "nasa-cmr",
+      "product_id": "hls-s30-002",
+      "remote_collection": "C2021957295-LPCLOUD",
+      "sensor_ids": [],
+      "product_type": "HLSS30 v2.0 \u00b7 \uad11\ud559 NBAR \uc9c0\ud45c\ubc18\uc0ac\ub3c4",
+      "end_datetime": "2025-07-23T02:11:18Z",
+      "geometry_role": "product_tile_extent",
+      "temporal_role": null,
+      "sar": null,
+      "output_grid": "HLS UTM/MGRS 30 m \u00b7 \uacbd\uacc4 \ub0b4 \uc720\ud6a8 \ud53d\uc140 \ubcf4\uc7a5 \uc544\ub2d8",
+      "native_resolution": "MSI \uc6d0\uc790\ub8cc \ubc34\ub4dc\ubcc4 10/20/60 m \u2192 HLS 30 m \uc7ac\uaca9\uc790\ud654",
+      "hls": {
+        "short_name": "HLSS30",
+        "version": "2.0",
+        "original_id": "HLS.S30.T99ZZZ.2025204T021054.v2.0",
+        "doi": "10.5067/HLS/HLSS30.002",
+        "source": "https://hls.gsfc.nasa.gov/products-description/s30/",
+        "scale_note": "\ubc18\uc0ac\ub3c4 scale=0.0001. Fmask \ube44\ud2b8 QA\ub294 S2 SCL\uacfc \ub2e4\ub984; \ud53d\uc140 QA\u00b7\ubd84\uc11d\u00b7\ud569\uc131\u00b7ML \ubbf8\uc9c0\uc6d0.",
+        "temporal_note": "CMR \uad00\uce21 \uc2dc\uc791/\uc885\ub8cc \uba54\ud0c0\ub370\uc774\ud130. \ud30c\uc77c\uba85 \uc2dc\uac01\uc744 \ud0c0\uc77c \ub0b4 \ubaa8\ub4e0 \ud53d\uc140\uc758 \ucd2c\uc601\uc2dc\uac01\uc73c\ub85c \uac04\uc8fc\ud558\uc9c0 \uc54a\uc74c.",
+        "not_surface_temperature": true
+      },
+      "support": {
+        "search": true,
+        "processing": "\uac80\uc0c9\u00b7\uba54\ud0c0\ub370\uc774\ud130\ub9cc \uc9c0\uc6d0; \uc571 \ub0b4 \ud53d\uc140 \ucc98\ub9ac \ubbf8\uc9c0\uc6d0",
+        "file_access": "authentication_required",
+        "access_verified": false
+      },
+      "source_url": "https://cmr.earthdata.nasa.gov/search/granules.json?concept_id=G_TEST_ONLY_S30-LPCLOUD&page_size=1",
+      "thumbnail": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/HLSS30.020/HLS.S30.T99ZZZ.2025204T021054.v2.0/HLS.S30.T99ZZZ.2025204T021054.v2.0.jpg",
+      "preview_diagnostic": {
+        "status": "unchecked",
+        "has_candidate": true,
+        "message": "\ubbf8\ub9ac\ubcf4\uae30 \ub9c1\ud06c \uc788\uc74c \u00b7 \uc2e4\uc81c \uc811\uadfc\uc740 \ubbf8\uac80\uc0ac"
+      },
+      "download_assets": [
+        {
+          "key": "B02",
+          "title": "B02 \u00b7 HLS 30 m \ubc18\uc0ac\ub3c4/\uad11\ud559 \ubc34\ub4dc",
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T99ZZZ.2025204T021054.v2.0/HLS.S30.T99ZZZ.2025204T021054.v2.0.B02.tif",
+          "filename": "HLS.S30.T99ZZZ.2025204T021054.v2.0.B02.tif",
+          "size_bytes": null,
+          "provider": "NASA CMR / LP DAAC",
+          "signing_required": false,
+          "common_names": [
+            "blue"
+          ],
+          "roles": [
+            "data"
+          ],
+          "raster_metadata": [
+            {
+              "scale": 0.0001,
+              "offset": 0,
+              "unit": "unitless"
+            }
+          ],
+          "media_type": "image/tiff",
+          "direct_url": null,
+          "requester_pays": false,
+          "authentication_required": true,
+          "access_verified": false,
+          "access_status": "authentication_required",
+          "access_note": "\uc81c\uacf5\ucc98 \uacc4\uc815 \uc778\uc99d \ud544\uc694 \u00b7 \ub2e4\uc6b4\ub85c\ub4dc \ubbf8\uac80\uc99d"
+        },
+        {
+          "key": "B03",
+          "title": "B03 \u00b7 HLS 30 m \ubc18\uc0ac\ub3c4/\uad11\ud559 \ubc34\ub4dc",
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T99ZZZ.2025204T021054.v2.0/HLS.S30.T99ZZZ.2025204T021054.v2.0.B03.tif",
+          "filename": "HLS.S30.T99ZZZ.2025204T021054.v2.0.B03.tif",
+          "size_bytes": null,
+          "provider": "NASA CMR / LP DAAC",
+          "signing_required": false,
+          "common_names": [
+            "green"
+          ],
+          "roles": [
+            "data"
+          ],
+          "raster_metadata": [
+            {
+              "scale": 0.0001,
+              "offset": 0,
+              "unit": "unitless"
+            }
+          ],
+          "media_type": "image/tiff",
+          "direct_url": null,
+          "requester_pays": false,
+          "authentication_required": true,
+          "access_verified": false,
+          "access_status": "authentication_required",
+          "access_note": "\uc81c\uacf5\ucc98 \uacc4\uc815 \uc778\uc99d \ud544\uc694 \u00b7 \ub2e4\uc6b4\ub85c\ub4dc \ubbf8\uac80\uc99d"
+        },
+        {
+          "key": "B04",
+          "title": "B04 \u00b7 HLS 30 m \ubc18\uc0ac\ub3c4/\uad11\ud559 \ubc34\ub4dc",
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T99ZZZ.2025204T021054.v2.0/HLS.S30.T99ZZZ.2025204T021054.v2.0.B04.tif",
+          "filename": "HLS.S30.T99ZZZ.2025204T021054.v2.0.B04.tif",
+          "size_bytes": null,
+          "provider": "NASA CMR / LP DAAC",
+          "signing_required": false,
+          "common_names": [
+            "red"
+          ],
+          "roles": [
+            "data"
+          ],
+          "raster_metadata": [
+            {
+              "scale": 0.0001,
+              "offset": 0,
+              "unit": "unitless"
+            }
+          ],
+          "media_type": "image/tiff",
+          "direct_url": null,
+          "requester_pays": false,
+          "authentication_required": true,
+          "access_verified": false,
+          "access_status": "authentication_required",
+          "access_note": "\uc81c\uacf5\ucc98 \uacc4\uc815 \uc778\uc99d \ud544\uc694 \u00b7 \ub2e4\uc6b4\ub85c\ub4dc \ubbf8\uac80\uc99d"
+        },
+        {
+          "key": "B08",
+          "title": "B08 \u00b7 HLS 30 m \ubc18\uc0ac\ub3c4/\uad11\ud559 \ubc34\ub4dc",
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T99ZZZ.2025204T021054.v2.0/HLS.S30.T99ZZZ.2025204T021054.v2.0.B08.tif",
+          "filename": "HLS.S30.T99ZZZ.2025204T021054.v2.0.B08.tif",
+          "size_bytes": null,
+          "provider": "NASA CMR / LP DAAC",
+          "signing_required": false,
+          "common_names": [
+            "nir"
+          ],
+          "roles": [
+            "data"
+          ],
+          "raster_metadata": [
+            {
+              "scale": 0.0001,
+              "offset": 0,
+              "unit": "unitless"
+            }
+          ],
+          "media_type": "image/tiff",
+          "direct_url": null,
+          "requester_pays": false,
+          "authentication_required": true,
+          "access_verified": false,
+          "access_status": "authentication_required",
+          "access_note": "\uc81c\uacf5\ucc98 \uacc4\uc815 \uc778\uc99d \ud544\uc694 \u00b7 \ub2e4\uc6b4\ub85c\ub4dc \ubbf8\uac80\uc99d"
+        },
+        {
+          "key": "B11",
+          "title": "B11 \u00b7 HLS 30 m \ubc18\uc0ac\ub3c4/\uad11\ud559 \ubc34\ub4dc",
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T99ZZZ.2025204T021054.v2.0/HLS.S30.T99ZZZ.2025204T021054.v2.0.B11.tif",
+          "filename": "HLS.S30.T99ZZZ.2025204T021054.v2.0.B11.tif",
+          "size_bytes": null,
+          "provider": "NASA CMR / LP DAAC",
+          "signing_required": false,
+          "common_names": [
+            "swir16"
+          ],
+          "roles": [
+            "data"
+          ],
+          "raster_metadata": [
+            {
+              "scale": 0.0001,
+              "offset": 0,
+              "unit": "unitless"
+            }
+          ],
+          "media_type": "image/tiff",
+          "direct_url": null,
+          "requester_pays": false,
+          "authentication_required": true,
+          "access_verified": false,
+          "access_status": "authentication_required",
+          "access_note": "\uc81c\uacf5\ucc98 \uacc4\uc815 \uc778\uc99d \ud544\uc694 \u00b7 \ub2e4\uc6b4\ub85c\ub4dc \ubbf8\uac80\uc99d"
+        },
+        {
+          "key": "B12",
+          "title": "B12 \u00b7 HLS 30 m \ubc18\uc0ac\ub3c4/\uad11\ud559 \ubc34\ub4dc",
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T99ZZZ.2025204T021054.v2.0/HLS.S30.T99ZZZ.2025204T021054.v2.0.B12.tif",
+          "filename": "HLS.S30.T99ZZZ.2025204T021054.v2.0.B12.tif",
+          "size_bytes": null,
+          "provider": "NASA CMR / LP DAAC",
+          "signing_required": false,
+          "common_names": [
+            "swir22"
+          ],
+          "roles": [
+            "data"
+          ],
+          "raster_metadata": [
+            {
+              "scale": 0.0001,
+              "offset": 0,
+              "unit": "unitless"
+            }
+          ],
+          "media_type": "image/tiff",
+          "direct_url": null,
+          "requester_pays": false,
+          "authentication_required": true,
+          "access_verified": false,
+          "access_status": "authentication_required",
+          "access_note": "\uc81c\uacf5\ucc98 \uacc4\uc815 \uc778\uc99d \ud544\uc694 \u00b7 \ub2e4\uc6b4\ub85c\ub4dc \ubbf8\uac80\uc99d"
+        },
+        {
+          "key": "B8A",
+          "title": "B8A \u00b7 HLS 30 m \ubc18\uc0ac\ub3c4/\uad11\ud559 \ubc34\ub4dc",
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T99ZZZ.2025204T021054.v2.0/HLS.S30.T99ZZZ.2025204T021054.v2.0.B8A.tif",
+          "filename": "HLS.S30.T99ZZZ.2025204T021054.v2.0.B8A.tif",
+          "size_bytes": null,
+          "provider": "NASA CMR / LP DAAC",
+          "signing_required": false,
+          "common_names": [
+            "nir08"
+          ],
+          "roles": [
+            "data"
+          ],
+          "raster_metadata": [
+            {
+              "scale": 0.0001,
+              "offset": 0,
+              "unit": "unitless"
+            }
+          ],
+          "media_type": "image/tiff",
+          "direct_url": null,
+          "requester_pays": false,
+          "authentication_required": true,
+          "access_verified": false,
+          "access_status": "authentication_required",
+          "access_note": "\uc81c\uacf5\ucc98 \uacc4\uc815 \uc778\uc99d \ud544\uc694 \u00b7 \ub2e4\uc6b4\ub85c\ub4dc \ubbf8\uac80\uc99d"
+        },
+        {
+          "key": "Fmask",
+          "title": "Fmask \u00b7 Fmask \ube44\ud2b8 \ud488\uc9c8 \ub9c8\uc2a4\ud06c \u00b7 S2 SCL\uacfc \ub2e4\ub978 \uc2a4\ud0a4\ub9c8, \uc571 \ubbf8\uac80\uc0ac",
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/HLSS30.020/HLS.S30.T99ZZZ.2025204T021054.v2.0/HLS.S30.T99ZZZ.2025204T021054.v2.0.Fmask.tif",
+          "filename": "HLS.S30.T99ZZZ.2025204T021054.v2.0.Fmask.tif",
+          "size_bytes": null,
+          "provider": "NASA CMR / LP DAAC",
+          "signing_required": false,
+          "common_names": [],
+          "roles": [
+            "quality"
+          ],
+          "raster_metadata": [],
+          "media_type": "image/tiff",
+          "direct_url": null,
+          "requester_pays": false,
+          "authentication_required": true,
+          "access_verified": false,
+          "access_status": "authentication_required",
+          "access_note": "\uc81c\uacf5\ucc98 \uacc4\uc815 \uc778\uc99d \ud544\uc694 \u00b7 \ub2e4\uc6b4\ub85c\ub4dc \ubbf8\uac80\uc99d"
+        }
+      ],
+      "overlap_percent": 100,
+      "purpose_plan": {
+        "purpose": "vegetation",
+        "label": "\uc2dd\uc0dd \ubd84\uc11d",
+        "analysis": "NDVI = (NIR \u2212 Red) / (NIR + Red)",
+        "product_status": "met",
+        "profile_id": "hls_s30",
+        "rule_version": "sensor-purpose-2026-10-30.2",
+        "analysis_keys": [
+          "B04",
+          "B8A",
+          "Fmask"
+        ],
+        "default_keys": [
+          "B04",
+          "B8A",
+          "Fmask",
+          "B03"
+        ],
+        "visual_keys": [
+          "B8A",
+          "B04",
+          "B03",
+          "Fmask"
+        ],
+        "visual_mapping": {
+          "nir": "B8A",
+          "red": "B04",
+          "green": "B03"
+        },
+        "visual_title": "\uc2dd\uc0dd \uac15\uc870 \uac00\uc0c9\uc0c1",
+        "visual_note": "QGIS/ArcGIS RGB \ucc44\ub110\uc5d0 NIR \u2192 Red \u2192 Green \uc21c\uc11c\ub85c \uc9c0\uc815\ud569\ub2c8\ub2e4. NDVI \uacc4\uc0b0 \uacb0\uacfc\ub294 \ubcc4\ub3c4\ub85c \ub2e8\uc77c\ubc34\ub4dc \uc758\uc0ac\uc0c9\uc0c1\uc73c\ub85c \ud45c\uc2dc\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4.",
+        "missing_bands": [],
+        "visual_missing": [],
+        "group": "other",
+        "group_reason": "\ub2e4\ub978 \uc704\uc131\uc758 \ub300\uc548 \ud6c4\ubcf4",
+        "preprocessing": "\ubc18\uc0ac\ub3c4/\uc628\ub3c4 scale\u00b7offset, NoData\u00b7\ud488\uc9c8 \ub9c8\uc2a4\ud06c\ub97c \ud655\uc778\ud558\uace0 \uc11c\ub85c \ub2e4\ub978 \ud574\uc0c1\ub3c4\uc758 \uaca9\uc790\ub97c \ub9de\ucd98 \ub4a4 \uacc4\uc0b0\ud558\uc138\uc694. \uc5ec\uae30\uc11c\ub294 \uc870\ud569\ub9cc \ucd94\ucc9c\ud558\uba70 \uc9c0\uc218\u00b7\ud569\uc131\uc601\uc0c1\uc740 \uc0dd\uc131\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4."
+      },
+      "pixel_quality": {
+        "status": "not_checked",
+        "message": "\uc2e4\uc81c \uc7a5\uba74 \ud53d\uc140 QA \ubbf8\uac80\uc0ac"
+      },
+      "evaluation": {
+        "status": "\ud310\uc815 \ubcf4\ub958",
+        "label": "\uc608\ube44 \uc801\ud569\uc131 \ud3c9\uac00",
+        "days_from_start": 3,
+        "sensor_match": true,
+        "sensor_reason": "NDVI = (NIR \u2212 Red) / (NIR + Red)",
+        "limitations": [
+          "\ud53d\uc140 \uac80\uc0ac\ub97c \uc218\ud589\ud558\uc9c0 \uc54a\uc558\uc2b5\ub2c8\ub2e4.",
+          "\uc7a5\uba74 \uad6c\ub984\ub7c9\uc740 AOI \uad6c\ub984\ub7c9\uc774 \uc544\ub2d9\ub2c8\ub2e4.",
+          "\ucd2c\uc601 \ubc94\uc704 \uc911\ucca9\uc740 \uc720\ud6a8 \uad00\uce21\ub960\uc774 \uc544\ub2d9\ub2c8\ub2e4."
+        ]
+      }
+    }
+  ],
+  "collection_statuses": [
+    {
+      "collection": "hls-l30-002",
+      "requests": 1,
+      "returned": 1,
+      "fetched": 1,
+      "duplicates": 0,
+      "invalid": 0,
+      "filtered": 0,
+      "error": null,
+      "last_datetime": "2025-07-23T02:10:54Z",
+      "provider_id": "nasa-cmr",
+      "status": "success",
+      "reason": "exhausted",
+      "complete": true,
+      "buffered_not_returned": 0,
+      "has_more": false
+    },
+    {
+      "collection": "hls-s30-002",
+      "requests": 1,
+      "returned": 1,
+      "fetched": 1,
+      "duplicates": 0,
+      "invalid": 0,
+      "filtered": 0,
+      "error": null,
+      "last_datetime": "2025-07-23T02:10:54Z",
+      "provider_id": "nasa-cmr",
+      "status": "success",
+      "reason": "exhausted",
+      "complete": true,
+      "buffered_not_returned": 0,
+      "has_more": false
+    }
+  ],
+  "outcome": "success",
+  "truncated": false,
+  "search_budget": {
+    "requests": 2,
+    "max_requests": 4,
+    "seconds_limit": 45,
+    "request_seconds_limit": 10,
+    "elapsed_seconds": 0.27
+  },
+  "provider_budgets": {
+    "nasa-cmr": {
+      "requests": 2,
+      "max_requests": 4,
+      "seconds_limit": 45,
+      "request_seconds_limit": 10,
+      "elapsed_seconds": 0.27
+    }
+  },
+  "source": "TEST ONLY synthetic HLS fixtures",
+  "endpoint": "https://earth-search.aws.element84.com/v1",
+  "access_guidance": [
+    {
+      "purposes": [
+        "vegetation",
+        "flood",
+        "urban",
+        "thermal"
+      ],
+      "provider": "USGS M2M / EarthExplorer",
+      "products": "Landsat 8/9 Collection 2 Level-2",
+      "authentication": "USGS account + M2M permission + Application Token",
+      "url": "https://www.usgs.gov/media/files/m2m-application-token-documentation",
+      "conditions": "Landsat public domain; account quota. AWS requester-pays is separate and remains disabled.",
+      "checked_on": "2026-11-02",
+      "scene_confirmed": false,
+      "scope": "Additional product/provider route, not searched for this AOI/period"
+    },
+    {
+      "purposes": [
+        "vegetation",
+        "thermal"
+      ],
+      "provider": "NASA Earthdata / LP DAAC",
+      "products": "VIIRS surface reflectance / thermal products, product-specific",
+      "authentication": "Earthdata Login/User Token compatible with the DAAC; application authorization",
+      "url": "https://www.earthdata.nasa.gov/data/earthdata-login",
+      "conditions": "Only VNP09GA.002 is currently connected through CMR; other products not connected. Review product and redistribution terms.",
+      "checked_on": "2026-11-02",
+      "scene_confirmed": false,
+      "scope": "Additional product/provider route, not searched for this AOI/period"
+    },
+    {
+      "purposes": [
+        "vegetation",
+        "flood",
+        "urban"
+      ],
+      "provider": "Planet",
+      "products": "PlanetScope / SkySat according to contract",
+      "authentication": "Contract/account + API key",
+      "url": "https://docs.planet.com/develop/authentication/",
+      "conditions": "Commercial/contract and redistribution limits; app not connected, no paid requests.",
+      "checked_on": "2026-11-02",
+      "scene_confirmed": false,
+      "scope": "Additional product/provider route, not searched for this AOI/period"
+    }
+  ],
+  "endpoints": {
+    "nasa-cmr": "https://cmr.earthdata.nasa.gov/search"
+  },
+  "returned": 2,
+  "limit": 25,
+  "recommendation": {
+    "purpose_type": "vegetation",
+    "label": "\uc2dd\uc0dd \ubd84\uc11d",
+    "matched": [
+      "\uc0ac\uc6a9\uc790 \uc9c1\uc811 \uc120\ud0dd"
+    ],
+    "collections": [
+      "sentinel-2-l2a",
+      "landsat-c2-l2",
+      "viirs-vnp09ga-002",
+      "pc-sentinel-2-l2a",
+      "pc-landsat-c2-l2",
+      "noaa-viirs-ndvi-cdr",
+      "hls-l30-002",
+      "hls-s30-002"
+    ],
+    "reasons": [
+      "\uc801\uc0c9\u00b7\uadfc\uc801\uc678\uc120\uc73c\ub85c \uc2dd\uc0dd \uc0c1\ud0dc\uc640 \ubcc0\ud654 \ud6c4\ubcf4\ub97c \uc0b4\ud3b4\ubd05\ub2c8\ub2e4."
+    ],
+    "future": [],
+    "cards": [
+      {
+        "observation": "\uad11\ud559 \ub2e4\uc911\ubd84\uad11",
+        "payload": "MSI",
+        "platform_label": "Sentinel-2 A/B/C (\uae30\uac04\ubcc4 \uc790\ub8cc)",
+        "product": "Level-2A \uc9c0\ud45c\ubc18\uc0ac\ub3c4",
+        "collection": "sentinel-2-l2a",
+        "native_resolution": "MSI 10 / 20 / 60 m (\ubc34\ub4dc\ubcc4)",
+        "output_grid": "L2A \ubc34\ub4dc\ubcc4 10 / 20 / 60 m; SCL \uae30\ubcf8 20 m",
+        "id": "s2_msi",
+        "fit": {
+          "status": "met",
+          "reason": "\uc801\uc0c9\u00b7\uadfc\uc801\uc678\uc120\uc73c\ub85c \uc2dd\uc0dd \uc0c1\ud0dc\uc640 \ubcc0\ud654 \ud6c4\ubcf4\ub97c \uc0b4\ud3b4\ubd05\ub2c8\ub2e4."
+        },
+        "required_bands": [
+          {
+            "name": "red",
+            "description": "B04 (10 m)"
+          },
+          {
+            "name": "nir",
+            "description": "B08 (10 m)"
+          }
+        ],
+        "provider_id": "earth-search",
+        "quality_materials": [
+          "SCL"
+        ],
+        "constraints": [
+          "\uad6c\ub984\u00b7\uadf8\ub9bc\uc790\u00b7\ub208\uc758 \uc601\ud5a5\uc744 \ubc1b\uc73c\uba70 \uc8fc\uac04 \ubc18\uc0ac\ub3c4 \uad00\uce21\uc774 \ud544\uc694\ud569\ub2c8\ub2e4.",
+          "\uc5f4\uc801\uc678\uc120 \ud0d1\uc7ac\uccb4\uac00 \uc5c6\uc5b4 \uc9c1\uc811 \uc9c0\ud45c\uc628\ub3c4\ub97c \uad00\uce21\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4."
+        ],
+        "app_support": {
+          "search": true,
+          "processing": "A3 \uc18c\ud615 AOI \ud488\uc9c8 \uc9c4\ub2e8\u00b7A4 \uac19\uc740 \ud50c\ub7ab\ud3fc \ub450 \ub0a0\uc9dc NDVI \ucc28\uc774/GeoTIFF \uc9c0\uc6d0 (\ucd5c\ub300 25 km\u00b2, \ubcf4\uc815 \ud655\uc778 \uc2dc)",
+          "download": "\uc6d0\ubcf8 Asset \ub9c1\ud06c \uc81c\uacf5 \uc2dc \uc5f0\uacb0; \uc778\uc99d\u00b7\uc694\uccad\uc790 \ube44\uc6a9\u00b7\ud30c\uc77c \uc811\uadfc\uc740 \ubcc4\ub3c4 \ud655\uc778"
+        },
+        "availability": {
+          "status": "unsearched",
+          "message": "\ud604\uc7ac AOI\u00b7\uae30\uac04\uc740 \ubbf8\uac80\uc0c9\uc785\ub2c8\ub2e4. \uc601\uc0c1 \uc874\uc7ac\ub97c \ud655\uc778\ud558\uc9c0 \uc54a\uc558\uc2b5\ub2c8\ub2e4.",
+          "count": null
+        },
+        "pixel_quality": {
+          "status": "not_checked",
+          "message": "\uc7a5\uba74 \ud53d\uc140 QA \ubbf8\uac80\uc0ac"
+        },
+        "sources": [
+          {
+            "title": "ESA Sentinel-2 facts",
+            "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2/Facts_and_figures",
+            "checked_on": "2026-10-30"
+          },
+          {
+            "title": "Copernicus Sentinel-2 L2A bands",
+            "url": "https://documentation.dataspace.copernicus.eu/APIs/SentinelHub/Data/S2L2A.html",
+            "checked_on": "2026-10-30"
+          }
+        ],
+        "rule_version": "sensor-purpose-2026-10-30.2",
+        "search_enabled": true,
+        "search_conditions": {
+          "collections": [
+            "sentinel-2-l2a"
+          ],
+          "platforms": [
+            "sentinel-2a",
+            "sentinel-2b",
+            "sentinel-2c"
+          ],
+          "product_levels": [
+            "S2MSI2A",
+            "L2A"
+          ],
+          "required_bands": [
+            "red",
+            "nir"
+          ]
+        }
+      },
+      {
+        "observation": "\uad11\ud559 \ub2e4\uc911\ubd84\uad11",
+        "payload": "Landsat 8 OLI / Landsat 9 OLI-2",
+        "platform_label": "Landsat 8 / 9",
+        "product": "Collection 2 Level-2 \uc9c0\ud45c\ubc18\uc0ac\ub3c4 (L2SR/L2SP)",
+        "collection": "landsat-c2-l2",
+        "native_resolution": "OLI/OLI-2 \ub2e4\uc911\ubd84\uad11 30 m; \uc804\uc815\uc0c9 15 m (\ucd94\ucc9c \uc9c0\uc218\uc5d0\ub294 \ubbf8\uc0ac\uc6a9)",
+        "output_grid": "Level-2 \uc9c0\ud45c\ubc18\uc0ac\ub3c4 30 m",
+        "id": "landsat_oli",
+        "fit": {
+          "status": "met",
+          "reason": "\uc801\uc0c9\u00b7\uadfc\uc801\uc678\uc120\uc73c\ub85c \uc2dd\uc0dd \uc0c1\ud0dc\uc640 \ubcc0\ud654 \ud6c4\ubcf4\ub97c \uc0b4\ud3b4\ubd05\ub2c8\ub2e4."
+        },
+        "required_bands": [
+          {
+            "name": "red",
+            "description": "SR_B4 (30 m)"
+          },
+          {
+            "name": "nir",
+            "description": "SR_B5 (30 m)"
+          }
+        ],
+        "provider_id": "earth-search",
+        "quality_materials": [
+          "QA_PIXEL",
+          "QA_RADSAT"
+        ],
+        "constraints": [
+          "\uad6c\ub984\u00b7\uadf8\ub9bc\uc790 \uc601\ud5a5\uacfc \ud63c\ud569 \ud53d\uc140\uc744 \uac80\ud1a0\ud574\uc57c \ud569\ub2c8\ub2e4.",
+          "Level-2 \ubc18\uc0ac\ub3c4\uc5d0 \uc804\uc815\uc0c9 15 m \ud574\uc0c1\ub3c4\ub97c \uc801\uc6a9\ud588\ub2e4\uace0 \uac04\uc8fc\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4."
+        ],
+        "app_support": {
+          "search": true,
+          "processing": "\uc774 \uc13c\uc11c\uc758 \ub798\uc2a4\ud130 \ucc98\ub9ac\u00b7\ud53d\uc140 QA \ubbf8\uc9c0\uc6d0",
+          "download": "\uc6d0\ubcf8 Asset \ub9c1\ud06c \uc81c\uacf5 \uc2dc \uc5f0\uacb0; \uc778\uc99d\u00b7\uc694\uccad\uc790 \ube44\uc6a9\u00b7\ud30c\uc77c \uc811\uadfc\uc740 \ubcc4\ub3c4 \ud655\uc778"
+        },
+        "availability": {
+          "status": "unsearched",
+          "message": "\ud604\uc7ac AOI\u00b7\uae30\uac04\uc740 \ubbf8\uac80\uc0c9\uc785\ub2c8\ub2e4. \uc601\uc0c1 \uc874\uc7ac\ub97c \ud655\uc778\ud558\uc9c0 \uc54a\uc558\uc2b5\ub2c8\ub2e4.",
+          "count": null
+        },
+        "pixel_quality": {
+          "status": "not_checked",
+          "message": "\uc7a5\uba74 \ud53d\uc140 QA \ubbf8\uac80\uc0ac"
+        },
+        "sources": [
+          {
+            "title": "USGS Landsat 8 OLI / TIRS",
+            "url": "https://www.usgs.gov/landsat-missions/landsat-8",
+            "checked_on": "2026-10-30"
+          },
+          {
+            "title": "NASA Landsat 9 OLI-2 / TIRS-2",
+            "url": "https://www.nasa.gov/wp-content/uploads/2015/04/landsat_9_fast_facts.pdf",
+            "checked_on": "2026-10-30"
+          },
+          {
+            "title": "USGS EROS Landsat 8/9 Level-2 \uc81c\ud488\u00b7\uaca9\uc790\u00b7\uc57c\uac04 \uc81c\uc57d",
+            "url": "https://www.usgs.gov/centers/eros/science/usgs-eros-archive-landsat-archives-landsat-8-9-olitirs-collection-2-level-2",
+            "checked_on": "2026-10-30"
+          },
+          {
+            "title": "USGS Collection 2 Level-2 products",
+            "url": "https://www.usgs.gov/landsat-missions/landsat-collection-2-level-2-science-products",
+            "checked_on": "2026-10-30"
+          }
+        ],
+        "rule_version": "sensor-purpose-2026-10-30.2",
+        "search_enabled": true,
+        "search_conditions": {
+          "collections": [
+            "landsat-c2-l2"
+          ],
+          "platforms": [
+            "landsat-8",
+            "landsat-9"
+          ],
+          "product_levels": [
+            "L2SR",
+            "L2SP"
+          ],
+          "required_bands": [
+            "red",
+            "nir"
+          ]
+        }
+      },
+      {
+        "observation": "\uad11\ud559 \uad11\uc5ed \uc9c0\ud45c\ubc18\uc0ac\ub3c4",
+        "payload": "VIIRS",
+        "platform_label": "Suomi NPP (NOAA\ub294 \uae30\uad00\uba85)",
+        "product": "VNP09GA.002 \uc77c\ubcc4 L2G \uc9c0\ud45c\ubc18\uc0ac\ub3c4",
+        "collection": "viirs-vnp09ga-002",
+        "native_resolution": "VIIRS I \ubc34\ub4dc nadir 375 m / M \ubc34\ub4dc 750 m; \uc2a4\uce94 \uc704\uce58\uc5d0 \ub530\ub77c \ubcc0\ud654",
+        "output_grid": "VNP09GA SIN \uc77c\ubcc4 500 m (I) / 1 km (M)",
+        "id": "viirs_sr",
+        "fit": {
+          "status": "conditional",
+          "reason": "\uad11\uc5ed \uc2dd\uc0dd \ucd94\uc801\uc6a9 \uc77c\ubcc4 \ubc18\uc0ac\ub3c4 \ud6c4\ubcf4\uc785\ub2c8\ub2e4. \uc218\ubc31 m \uad00\uce21\uc774\uba70 \uc0c1\uc138 \uc2dd\uc0dd\uc758 \ub3d9\ub4f1 \ub300\uc548\uc774 \uc544\ub2d9\ub2c8\ub2e4."
+        },
+        "required_bands": [
+          {
+            "name": "red",
+            "description": "I1 0.64 \u03bcm (500 m \ucd9c\ub825)"
+          },
+          {
+            "name": "nir",
+            "description": "I2 0.86 \u03bcm (500 m \ucd9c\ub825)"
+          }
+        ],
+        "provider_id": "nasa-cmr",
+        "quality_materials": [
+          "QF\u00b7\uad00\uce21 \uc218\u00b7\uad00\uce21 \uae30\ud558 (\uc571\uc5d0\uc11c \ud53d\uc140 \ubbf8\uac80\uc0ac)"
+        ],
+        "constraints": [
+          "\uad11\uc5ed \uc2dd\uc0dd\uc758 \uc2dc\uac04 \ucd94\uc801 \ucc38\uace0 \ud6c4\ubcf4\uc774\uba70 Sentinel-2 10 m \uc0c1\uc138\ub3c4 \ub300\uc548\uc774 \uc544\ub2d9\ub2c8\ub2e4.",
+          "\uc77c\ubcc4 \uc9d1\uacc4 \uc81c\ud488: \ub2e8\uc77c \uc21c\uac04\uc758 \ucd2c\uc601\uc774 \uc544\ub2d9\ub2c8\ub2e4. \uad6c\ub984\u00b7\uadf8\ub9bc\uc790\u00b7\ud63c\ud569 \ud53d\uc140\u00b7\uad00\uce21 \uc218\ub97c \ubcc4\ub3c4 \ud655\uc778\ud574\uc57c \ud569\ub2c8\ub2e4.",
+          "HDF5 granule \uac80\uc0c9\ub9cc \uc9c0\uc6d0\ud569\ub2c8\ub2e4. \uac1c\ubcc4 \ubc34\ub4dc \uc874\uc7ac\u00b7\ud53d\uc140 QA\u00b7NDVI\u00b7\ud569\uc131\u00b7ML\uc740 \uc571 \ub0b4 \ubbf8\uc9c0\uc6d0\uc785\ub2c8\ub2e4."
+        ],
+        "app_support": {
+          "search": true,
+          "processing": "\uc774 \uc13c\uc11c\uc758 \ub798\uc2a4\ud130 \ucc98\ub9ac\u00b7\ud53d\uc140 QA \ubbf8\uc9c0\uc6d0",
+          "download": "\uc6d0\ubcf8 Asset \ub9c1\ud06c \uc81c\uacf5 \uc2dc \uc5f0\uacb0; \uc778\uc99d\u00b7\uc694\uccad\uc790 \ube44\uc6a9\u00b7\ud30c\uc77c \uc811\uadfc\uc740 \ubcc4\ub3c4 \ud655\uc778"
+        },
+        "availability": {
+          "status": "unsearched",
+          "message": "\ud604\uc7ac AOI\u00b7\uae30\uac04\uc740 \ubbf8\uac80\uc0c9\uc785\ub2c8\ub2e4. \uc601\uc0c1 \uc874\uc7ac\ub97c \ud655\uc778\ud558\uc9c0 \uc54a\uc558\uc2b5\ub2c8\ub2e4.",
+          "count": null
+        },
+        "pixel_quality": {
+          "status": "not_checked",
+          "message": "\uc7a5\uba74 \ud53d\uc140 QA \ubbf8\uac80\uc0ac"
+        },
+        "sources": [
+          {
+            "title": "NASA VIIRS Land Surface Reflectance \uc81c\ud488\u00b7\ud50c\ub7ab\ud3fc",
+            "url": "https://viirsland.gsfc.nasa.gov/Products/NASA/ReflectanceESDR.html",
+            "checked_on": "2026-10-30"
+          },
+          {
+            "title": "NASA VIIRS Surface Reflectance V2 User Guide",
+            "url": "https://lpdaac.usgs.gov/documents/1657/VNP09_User_Guide_V2.pdf",
+            "checked_on": "2026-10-30"
+          },
+          {
+            "title": "NASA CMR Search API",
+            "url": "https://cmr.earthdata.nasa.gov/search/site/docs/search/api.html",
+            "checked_on": "2026-10-30"
+          }
+        ],
+        "rule_version": "sensor-purpose-2026-10-30.2",
+        "search_enabled": true,
+        "search_conditions": {
+          "collections": [
+            "viirs-vnp09ga-002"
+          ],
+          "platforms": [
+            "suomi-npp"
+          ],
+          "product_levels": [
+            "L2G"
+          ],
+          "required_bands": [
+            "red",
+            "nir"
+          ]
+        }
+      },
+      {
+        "observation": "\uad11\ud559 \ub2e4\uc911\ubd84\uad11",
+        "payload": "MSI",
+        "platform_label": "Sentinel-2 A/B/C (\uae30\uac04\ubcc4 \uc790\ub8cc)",
+        "product": "Level-2A \uc9c0\ud45c\ubc18\uc0ac\ub3c4",
+        "collection": "pc-sentinel-2-l2a",
+        "native_resolution": "MSI 10 / 20 / 60 m (\ubc34\ub4dc\ubcc4)",
+        "output_grid": "L2A \ubc34\ub4dc\ubcc4 10 / 20 / 60 m; SCL \uae30\ubcf8 20 m",
+        "id": "pc_s2_msi",
+        "fit": {
+          "status": "met",
+          "reason": "\uc801\uc0c9\u00b7\uadfc\uc801\uc678\uc120\uc73c\ub85c \uc2dd\uc0dd \uc0c1\ud0dc\uc640 \ubcc0\ud654 \ud6c4\ubcf4\ub97c \uc0b4\ud3b4\ubd05\ub2c8\ub2e4."
+        },
+        "required_bands": [
+          {
+            "name": "red",
+            "description": "B04 (10 m)"
+          },
+          {
+            "name": "nir",
+            "description": "B08 (10 m)"
+          }
+        ],
+        "provider_id": "planetary-computer",
+        "quality_materials": [
+          "SCL"
+        ],
+        "constraints": [
+          "\uad6c\ub984\u00b7\uadf8\ub9bc\uc790\u00b7\ub208\uc758 \uc601\ud5a5\uc744 \ubc1b\uc73c\uba70 \uc8fc\uac04 \ubc18\uc0ac\ub3c4 \uad00\uce21\uc774 \ud544\uc694\ud569\ub2c8\ub2e4.",
+          "\uc5f4\uc801\uc678\uc120 \ud0d1\uc7ac\uccb4\uac00 \uc5c6\uc5b4 \uc9c1\uc811 \uc9c0\ud45c\uc628\ub3c4\ub97c \uad00\uce21\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4.",
+          "Planetary Computer \uacf5\uac1c STAC/\uc11c\ubc84 \ub2e8\uae30 SAS \uacbd\ub85c. \ud604\uc7ac \uc774 \uacbd\ub85c\uc758 A2~A4\u00b7\ud53d\uc140 QA\ub294 \ubbf8\uc9c0\uc6d0\uc785\ub2c8\ub2e4."
+        ],
+        "app_support": {
+          "search": true,
+          "processing": "\uc774 \uc13c\uc11c\uc758 \ub798\uc2a4\ud130 \ucc98\ub9ac\u00b7\ud53d\uc140 QA \ubbf8\uc9c0\uc6d0",
+          "download": "\uc6d0\ubcf8 Asset \ub9c1\ud06c \uc81c\uacf5 \uc2dc \uc5f0\uacb0; \uc778\uc99d\u00b7\uc694\uccad\uc790 \ube44\uc6a9\u00b7\ud30c\uc77c \uc811\uadfc\uc740 \ubcc4\ub3c4 \ud655\uc778"
+        },
+        "availability": {
+          "status": "unsearched",
+          "message": "\ud604\uc7ac AOI\u00b7\uae30\uac04\uc740 \ubbf8\uac80\uc0c9\uc785\ub2c8\ub2e4. \uc601\uc0c1 \uc874\uc7ac\ub97c \ud655\uc778\ud558\uc9c0 \uc54a\uc558\uc2b5\ub2c8\ub2e4.",
+          "count": null
+        },
+        "pixel_quality": {
+          "status": "not_checked",
+          "message": "\uc7a5\uba74 \ud53d\uc140 QA \ubbf8\uac80\uc0ac"
+        },
+        "sources": [
+          {
+            "title": "ESA Sentinel-2 facts",
+            "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2/Facts_and_figures",
+            "checked_on": "2026-10-30"
+          },
+          {
+            "title": "Copernicus Sentinel-2 L2A bands",
+            "url": "https://documentation.dataspace.copernicus.eu/APIs/SentinelHub/Data/S2L2A.html",
+            "checked_on": "2026-10-30"
+          },
+          {
+            "title": "Microsoft Planetary Computer public STAC and anonymous SAS",
+            "url": "https://planetarycomputer.microsoft.com/docs/concepts/sas/",
+            "checked_on": "2026-11-02"
+          }
+        ],
+        "rule_version": "sensor-purpose-2026-10-30.2",
+        "search_enabled": true,
+        "search_conditions": {
+          "collections": [
+            "pc-sentinel-2-l2a"
+          ],
+          "platforms": [
+            "sentinel-2a",
+            "sentinel-2b",
+            "sentinel-2c"
+          ],
+          "product_levels": [
+            "S2MSI2A",
+            "L2A"
+          ],
+          "required_bands": [
+            "red",
+            "nir"
+          ]
+        }
+      },
+      {
+        "observation": "\uad11\ud559 \ub2e4\uc911\ubd84\uad11",
+        "payload": "Landsat 8 OLI / Landsat 9 OLI-2",
+        "platform_label": "Landsat 8 / 9",
+        "product": "Collection 2 Level-2 \uc9c0\ud45c\ubc18\uc0ac\ub3c4 (L2SR/L2SP)",
+        "collection": "pc-landsat-c2-l2",
+        "native_resolution": "OLI/OLI-2 \ub2e4\uc911\ubd84\uad11 30 m; \uc804\uc815\uc0c9 15 m (\ucd94\ucc9c \uc9c0\uc218\uc5d0\ub294 \ubbf8\uc0ac\uc6a9)",
+        "output_grid": "Level-2 \uc9c0\ud45c\ubc18\uc0ac\ub3c4 30 m",
+        "id": "pc_landsat_oli",
+        "fit": {
+          "status": "met",
+          "reason": "\uc801\uc0c9\u00b7\uadfc\uc801\uc678\uc120\uc73c\ub85c \uc2dd\uc0dd \uc0c1\ud0dc\uc640 \ubcc0\ud654 \ud6c4\ubcf4\ub97c \uc0b4\ud3b4\ubd05\ub2c8\ub2e4."
+        },
+        "required_bands": [
+          {
+            "name": "red",
+            "description": "SR_B4 (30 m)"
+          },
+          {
+            "name": "nir",
+            "description": "SR_B5 (30 m)"
+          }
+        ],
+        "provider_id": "planetary-computer",
+        "quality_materials": [
+          "QA_PIXEL",
+          "QA_RADSAT"
+        ],
+        "constraints": [
+          "\uad6c\ub984\u00b7\uadf8\ub9bc\uc790 \uc601\ud5a5\uacfc \ud63c\ud569 \ud53d\uc140\uc744 \uac80\ud1a0\ud574\uc57c \ud569\ub2c8\ub2e4.",
+          "Level-2 \ubc18\uc0ac\ub3c4\uc5d0 \uc804\uc815\uc0c9 15 m \ud574\uc0c1\ub3c4\ub97c \uc801\uc6a9\ud588\ub2e4\uace0 \uac04\uc8fc\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4.",
+          "Planetary Computer \uacf5\uac1c STAC/\uc11c\ubc84 \ub2e8\uae30 SAS \uacbd\ub85c. \ud604\uc7ac \uc774 \uacbd\ub85c\uc758 A2~A4\u00b7\ud53d\uc140 QA\ub294 \ubbf8\uc9c0\uc6d0\uc785\ub2c8\ub2e4."
+        ],
+        "app_support": {
+          "search": true,
+          "processing": "\uc774 \uc13c\uc11c\uc758 \ub798\uc2a4\ud130 \ucc98\ub9ac\u00b7\ud53d\uc140 QA \ubbf8\uc9c0\uc6d0",
+          "download": "\uc6d0\ubcf8 Asset \ub9c1\ud06c \uc81c\uacf5 \uc2dc \uc5f0\uacb0; \uc778\uc99d\u00b7\uc694\uccad\uc790 \ube44\uc6a9\u00b7\ud30c\uc77c \uc811\uadfc\uc740 \ubcc4\ub3c4 \ud655\uc778"
+        },
+        "availability": {
+          "status": "unsearched",
+          "message": "\ud604\uc7ac AOI\u00b7\uae30\uac04\uc740 \ubbf8\uac80\uc0c9\uc785\ub2c8\ub2e4. \uc601\uc0c1 \uc874\uc7ac\ub97c \ud655\uc778\ud558\uc9c0 \uc54a\uc558\uc2b5\ub2c8\ub2e4.",
+          "count": null
+        },
+        "pixel_quality": {
+          "status": "not_checked",
+          "message": "\uc7a5\uba74 \ud53d\uc140 QA \ubbf8\uac80\uc0ac"
+        },
+        "sources": [
+          {
+            "title": "USGS Landsat 8 OLI / TIRS",
+            "url": "https://www.usgs.gov/landsat-missions/landsat-8",
+            "checked_on": "2026-10-30"
+          },
+          {
+            "title": "NASA Landsat 9 OLI-2 / TIRS-2",
+            "url": "https://www.nasa.gov/wp-content/uploads/2015/04/landsat_9_fast_facts.pdf",
+            "checked_on": "2026-10-30"
+          },
+          {
+            "title": "USGS EROS Landsat 8/9 Level-2 \uc81c\ud488\u00b7\uaca9\uc790\u00b7\uc57c\uac04 \uc81c\uc57d",
+            "url": "https://www.usgs.gov/centers/eros/science/usgs-eros-archive-landsat-archives-landsat-8-9-olitirs-collection-2-level-2",
+            "checked_on": "2026-10-30"
+          },
+          {
+            "title": "USGS Collection 2 Level-2 products",
+            "url": "https://www.usgs.gov/landsat-missions/landsat-collection-2-level-2-science-products",
+            "checked_on": "2026-10-30"
+          },
+          {
+            "title": "Microsoft Planetary Computer public STAC and anonymous SAS",
+            "url": "https://planetarycomputer.microsoft.com/docs/concepts/sas/",
+            "checked_on": "2026-11-02"
+          }
+        ],
+        "rule_version": "sensor-purpose-2026-10-30.2",
+        "search_enabled": true,
+        "search_conditions": {
+          "collections": [
+            "pc-landsat-c2-l2"
+          ],
+          "platforms": [
+            "landsat-8",
+            "landsat-9"
+          ],
+          "product_levels": [
+            "L2SR",
+            "L2SP"
+          ],
+          "required_bands": [
+            "red",
+            "nir"
+          ]
+        }
+      },
+      {
+        "observation": "\uad11\ud559 NDVI \uae30\ud6c4\uc790\ub8cc\ub808\ucf54\ub4dc",
+        "payload": "VIIRS",
+        "platform_label": "NOAA-20 / JPSS-1",
+        "product": "VIIRS NDVI CDR v1 / JP113C1 v001",
+        "collection": "noaa-viirs-ndvi-cdr",
+        "native_resolution": "VIIRS 375/750 m \uad00\uce21 \uae30\ubc18\uc758 \uc9d1\uacc4\u00b7\ud30c\uc0dd \uc81c\ud488; \ucd9c\ub825 \uc0c1\uc138\ub3c4\ub294 0.05\u00b0 \uaca9\uc790\ub85c \uc81c\ud55c",
+        "output_grid": "\uc804 \uc9c0\uad6c 0.05\u00b0 \uacbd\uc704\ub3c4 (\ub0a8\ubd81 \uc57d 5.56 km, \ub3d9\uc11c \ud06c\uae30\ub294 \uc704\ub3c4\ubcc4 \uc0c1\uc774)",
+        "id": "noaa_viirs_ndvi",
+        "fit": {
+          "status": "conditional",
+          "reason": "\uad11\uc5ed \uc2dd\uc0dd \ucd94\uc801\uc6a9 \uc77c\ubcc4 \ubc18\uc0ac\ub3c4 \ud6c4\ubcf4\uc785\ub2c8\ub2e4. \uc218\ubc31 m \uad00\uce21\uc774\uba70 \uc0c1\uc138 \uc2dd\uc0dd\uc758 \ub3d9\ub4f1 \ub300\uc548\uc774 \uc544\ub2d9\ub2c8\ub2e4."
+        },
+        "required_bands": [
+          {
+            "name": "ndvi",
+            "description": "\uac00\uacf5\ub41c \uc77c\ubcc4 NDVI \ubc0f \ud488\uc9c8 \ubcc0\uc218: \uc6d0\ubcf8 NetCDF \ub0b4\ubd80 \ubcc0\uc218"
+          }
+        ],
+        "provider_id": "noaa-nodd",
+        "quality_materials": [
+          "\uc6d0\ubcf8 NetCDF \ud488\uc9c8 \ud50c\ub798\uadf8 (\uc571 \ub0b4 \ud53d\uc140 \ubbf8\uac80\uc0ac)"
+        ],
+        "constraints": [
+          "\uad11\uc5ed \uc2dd\uc0dd \uc7a5\uae30 \ubcc0\ud654 \ucc38\uace0\uc6a9. \ub18d\uc9c0 \ud544\uc9c0\u00b7\ub3c4\uc2dc \uc0c1\uc138 \ubd84\uc11d\uc774\ub098 Sentinel-2 10 m \ub300\uc548\uc774 \uc544\ub2d9\ub2c8\ub2e4.",
+          "\ub2e8\uc77c \uc21c\uac04\uc758 \uc6d0\uad00\uce21 \uc601\uc0c1\uc774 \uc544\ub2cc \uc77c\ubcc4 NDVI \ud30c\uc0dd CDR\uc785\ub2c8\ub2e4. \uc81c\ud488 \uaca9\uc790 \ud3ec\ud568\uc740 \ud53d\uc140 \uc720\ud6a8\ub960\uc774 \uc544\ub2d9\ub2c8\ub2e4.",
+          "\uc774\ubc88 \uc5f0\uacb0\uc740 2023\ub144 \uc774\ud6c4 NOAA-20 JP113C1 v001\ubfd0\uc785\ub2c8\ub2e4. NetCDF \uc6d0\ubcf8 \ub2e4\uc6b4\ub85c\ub4dc\ub97c \uc9c0\uc6d0\ud558\uba70 \ubbf8\ub9ac\ubcf4\uae30\u00b7QA\u00b7\uc7ac\uacc4\uc0b0/\ud569\uc131/ML\uc740 \ubbf8\uc9c0\uc6d0\uc785\ub2c8\ub2e4."
+        ],
+        "app_support": {
+          "search": true,
+          "processing": "\uc774 \uc13c\uc11c\uc758 \ub798\uc2a4\ud130 \ucc98\ub9ac\u00b7\ud53d\uc140 QA \ubbf8\uc9c0\uc6d0",
+          "download": "\uc6d0\ubcf8 Asset \ub9c1\ud06c \uc81c\uacf5 \uc2dc \uc5f0\uacb0; \uc778\uc99d\u00b7\uc694\uccad\uc790 \ube44\uc6a9\u00b7\ud30c\uc77c \uc811\uadfc\uc740 \ubcc4\ub3c4 \ud655\uc778"
+        },
+        "availability": {
+          "status": "unsearched",
+          "message": "\ud604\uc7ac AOI\u00b7\uae30\uac04\uc740 \ubbf8\uac80\uc0c9\uc785\ub2c8\ub2e4. \uc601\uc0c1 \uc874\uc7ac\ub97c \ud655\uc778\ud558\uc9c0 \uc54a\uc558\uc2b5\ub2c8\ub2e4.",
+          "count": null
+        },
+        "pixel_quality": {
+          "status": "not_checked",
+          "message": "\uc7a5\uba74 \ud53d\uc140 QA \ubbf8\uac80\uc0ac"
+        },
+        "sources": [
+          {
+            "title": "NOAA NCEI NDVI Climate Data Record / 0.05 degree grid",
+            "url": "https://www.ncei.noaa.gov/products/climate-data-records/normalized-difference-vegetation-index",
+            "checked_on": "2026-11-02"
+          },
+          {
+            "title": "NOAA NODD terrestrial CDR public access and terms",
+            "url": "https://registry.opendata.aws/noaa-cdr-terrestrial/",
+            "checked_on": "2026-11-02"
+          }
+        ],
+        "rule_version": "sensor-purpose-2026-10-30.2",
+        "search_enabled": true,
+        "search_conditions": {
+          "collections": [
+            "noaa-viirs-ndvi-cdr"
+          ],
+          "platforms": [
+            "noaa-20"
+          ],
+          "product_levels": [
+            "daily_CDR"
+          ],
+          "required_bands": [
+            "ndvi"
+          ]
+        }
+      },
+      {
+        "observation": "\uad11\ud559 \uc870\ud654 \uc9c0\ud45c\ubc18\uc0ac\ub3c4 \uc2dc\uacc4\uc5f4",
+        "payload": "OLI / OLI-2 \uc6d0\uc790\ub8cc \uacc4\uc5f4",
+        "platform_label": "Landsat 8/9 HLS L30",
+        "product": "HLSL30 v2.0 NBAR \uc9c0\ud45c\ubc18\uc0ac\ub3c4",
+        "collection": "hls-l30-002",
+        "native_resolution": "OLI \ubc18\uc0ac\ub3c4 30 m \uc6d0\uc790\ub8cc",
+        "output_grid": "HLS UTM/MGRS 30 m",
+        "id": "hls_l30",
+        "fit": {
+          "status": "met",
+          "reason": "\uc801\uc0c9\u00b7\uadfc\uc801\uc678\uc120\uc73c\ub85c \uc2dd\uc0dd \uc0c1\ud0dc\uc640 \ubcc0\ud654 \ud6c4\ubcf4\ub97c \uc0b4\ud3b4\ubd05\ub2c8\ub2e4."
+        },
+        "required_bands": [
+          {
+            "name": "red",
+            "description": "B04 \uc801\uc0c9 \ubc18\uc0ac\ub3c4"
+          },
+          {
+            "name": "nir",
+            "description": "B05 (L30) / B8A (S30) \uc870\ud654 NIR \ubc18\uc0ac\ub3c4"
+          }
+        ],
+        "provider_id": "nasa-cmr",
+        "quality_materials": [
+          "Fmask \ube44\ud2b8 \ud488\uc9c8 \ub9c8\uc2a4\ud06c \u00b7 \uc571 \ub0b4 \ud53d\uc140 \uac80\uc0ac \ubbf8\uc9c0\uc6d0"
+        ],
+        "constraints": [
+          "30 m \uad11\ud559 \uc2dc\uacc4\uc5f4 \ud6c4\ubcf4\uc774\uba70 \uad6c\ub984 \uc544\ub798 \ubcf5\uc6d0 \uacb0\uacfc\ub098 \uc9c0\ud45c\uba74\uc628\ub3c4 \uc81c\ud488\uc774 \uc544\ub2d9\ub2c8\ub2e4.",
+          "\ubc18\uc0ac\ub3c4 scale=0.0001, Fmask \ube44\ud2b8 QA\ub294 Sentinel-2 SCL\uacfc \ub2e4\ub985\ub2c8\ub2e4. \uae30\uc874 A2~A4\u00b7\ud569\uc131\u00b7ML \uc5d4\uc9c4\uc740 \uc5f0\uacb0\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4.",
+          "\uc6d0\ubcf8\uc740 Earthdata \uad8c\ud55c\u00b7\ub300\uc0c1 \uc81c\ud488 \uc774\uc6a9 \uc870\uac74 \ud655\uc778 \ud6c4 \uc11c\ubc84\uc5d0\uc11c \uba85\uc2dc \ub2e4\uc6b4\ub85c\ub4dc\ud569\ub2c8\ub2e4. \uac1c\ubcc4 \uc785\ub825 \ud50c\ub7ab\ud3fc \ub204\ub77d\uc740 \ubbf8\uc81c\uacf5\uc73c\ub85c \uc720\uc9c0\ud569\ub2c8\ub2e4."
+        ],
+        "app_support": {
+          "search": true,
+          "processing": "\uc774 \uc13c\uc11c\uc758 \ub798\uc2a4\ud130 \ucc98\ub9ac\u00b7\ud53d\uc140 QA \ubbf8\uc9c0\uc6d0",
+          "download": "\uc6d0\ubcf8 Asset \ub9c1\ud06c \uc81c\uacf5 \uc2dc \uc5f0\uacb0; \uc778\uc99d\u00b7\uc694\uccad\uc790 \ube44\uc6a9\u00b7\ud30c\uc77c \uc811\uadfc\uc740 \ubcc4\ub3c4 \ud655\uc778"
+        },
+        "availability": {
+          "status": "searched",
+          "count": 1,
+          "message": "\uc870\ud68c \ubc94\uc704\uc5d0\uc11c \uc81c\ud488\u00b7\ud544\uc218 \ubc34\ub4dc \uba54\ud0c0\ub370\uc774\ud130\uac00 \ub9de\ub294 \ud6c4\ubcf4 1\uac74. \ud30c\uc77c \uc811\uadfc\u00b7\ud53d\uc140 \uc720\ud6a8\uc131\uc740 \ubbf8\ud655\uc778\uc785\ub2c8\ub2e4."
+        },
+        "pixel_quality": {
+          "status": "not_checked",
+          "message": "\uc7a5\uba74 \ud53d\uc140 QA \ubbf8\uac80\uc0ac"
+        },
+        "sources": [
+          {
+            "title": "NASA HLS L30/S30 product content, bands, scale and 30 m grid",
+            "url": "https://hls.gsfc.nasa.gov/products-description/",
+            "checked_on": "2026-11-02"
+          },
+          {
+            "title": "NASA CMR Search API",
+            "url": "https://cmr.earthdata.nasa.gov/search/site/docs/search/api.html",
+            "checked_on": "2026-10-30"
+          }
+        ],
+        "rule_version": "sensor-purpose-2026-10-30.2",
+        "search_enabled": true,
+        "search_conditions": {
+          "collections": [
+            "hls-l30-002"
+          ],
+          "platforms": [
+            "landsat-8",
+            "landsat-9"
+          ],
+          "product_levels": [
+            "HLS v2.0 NBAR"
+          ],
+          "required_bands": [
+            "red",
+            "nir"
+          ]
+        }
+      },
+      {
+        "observation": "\uad11\ud559 \uc870\ud654 \uc9c0\ud45c\ubc18\uc0ac\ub3c4 \uc2dc\uacc4\uc5f4",
+        "payload": "MSI \uc6d0\uc790\ub8cc \uacc4\uc5f4",
+        "platform_label": "Sentinel-2 HLS S30",
+        "product": "HLSS30 v2.0 NBAR \uc9c0\ud45c\ubc18\uc0ac\ub3c4",
+        "collection": "hls-s30-002",
+        "native_resolution": "MSI \ubc34\ub4dc\ubcc4 10/20/60 m \uc6d0\uc790\ub8cc \u2192 30 m",
+        "output_grid": "HLS UTM/MGRS 30 m",
+        "id": "hls_s30",
+        "fit": {
+          "status": "met",
+          "reason": "\uc801\uc0c9\u00b7\uadfc\uc801\uc678\uc120\uc73c\ub85c \uc2dd\uc0dd \uc0c1\ud0dc\uc640 \ubcc0\ud654 \ud6c4\ubcf4\ub97c \uc0b4\ud3b4\ubd05\ub2c8\ub2e4."
+        },
+        "required_bands": [
+          {
+            "name": "red",
+            "description": "B04 \uc801\uc0c9 \ubc18\uc0ac\ub3c4"
+          },
+          {
+            "name": "nir",
+            "description": "B05 (L30) / B8A (S30) \uc870\ud654 NIR \ubc18\uc0ac\ub3c4"
+          }
+        ],
+        "provider_id": "nasa-cmr",
+        "quality_materials": [
+          "Fmask \ube44\ud2b8 \ud488\uc9c8 \ub9c8\uc2a4\ud06c \u00b7 \uc571 \ub0b4 \ud53d\uc140 \uac80\uc0ac \ubbf8\uc9c0\uc6d0"
+        ],
+        "constraints": [
+          "30 m \uad11\ud559 \uc2dc\uacc4\uc5f4 \ud6c4\ubcf4\uc774\uba70 \uad6c\ub984 \uc544\ub798 \ubcf5\uc6d0 \uacb0\uacfc\ub098 \uc9c0\ud45c\uba74\uc628\ub3c4 \uc81c\ud488\uc774 \uc544\ub2d9\ub2c8\ub2e4.",
+          "\ubc18\uc0ac\ub3c4 scale=0.0001, Fmask \ube44\ud2b8 QA\ub294 Sentinel-2 SCL\uacfc \ub2e4\ub985\ub2c8\ub2e4. \uae30\uc874 A2~A4\u00b7\ud569\uc131\u00b7ML \uc5d4\uc9c4\uc740 \uc5f0\uacb0\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4.",
+          "\uc6d0\ubcf8\uc740 Earthdata \uad8c\ud55c\u00b7\ub300\uc0c1 \uc81c\ud488 \uc774\uc6a9 \uc870\uac74 \ud655\uc778 \ud6c4 \uc11c\ubc84\uc5d0\uc11c \uba85\uc2dc \ub2e4\uc6b4\ub85c\ub4dc\ud569\ub2c8\ub2e4. \uac1c\ubcc4 \uc785\ub825 \ud50c\ub7ab\ud3fc \ub204\ub77d\uc740 \ubbf8\uc81c\uacf5\uc73c\ub85c \uc720\uc9c0\ud569\ub2c8\ub2e4."
+        ],
+        "app_support": {
+          "search": true,
+          "processing": "\uc774 \uc13c\uc11c\uc758 \ub798\uc2a4\ud130 \ucc98\ub9ac\u00b7\ud53d\uc140 QA \ubbf8\uc9c0\uc6d0",
+          "download": "\uc6d0\ubcf8 Asset \ub9c1\ud06c \uc81c\uacf5 \uc2dc \uc5f0\uacb0; \uc778\uc99d\u00b7\uc694\uccad\uc790 \ube44\uc6a9\u00b7\ud30c\uc77c \uc811\uadfc\uc740 \ubcc4\ub3c4 \ud655\uc778"
+        },
+        "availability": {
+          "status": "searched",
+          "count": 1,
+          "message": "\uc870\ud68c \ubc94\uc704\uc5d0\uc11c \uc81c\ud488\u00b7\ud544\uc218 \ubc34\ub4dc \uba54\ud0c0\ub370\uc774\ud130\uac00 \ub9de\ub294 \ud6c4\ubcf4 1\uac74. \ud30c\uc77c \uc811\uadfc\u00b7\ud53d\uc140 \uc720\ud6a8\uc131\uc740 \ubbf8\ud655\uc778\uc785\ub2c8\ub2e4."
+        },
+        "pixel_quality": {
+          "status": "not_checked",
+          "message": "\uc7a5\uba74 \ud53d\uc140 QA \ubbf8\uac80\uc0ac"
+        },
+        "sources": [
+          {
+            "title": "NASA HLS L30/S30 product content, bands, scale and 30 m grid",
+            "url": "https://hls.gsfc.nasa.gov/products-description/",
+            "checked_on": "2026-11-02"
+          },
+          {
+            "title": "NASA CMR Search API",
+            "url": "https://cmr.earthdata.nasa.gov/search/site/docs/search/api.html",
+            "checked_on": "2026-10-30"
+          }
+        ],
+        "rule_version": "sensor-purpose-2026-10-30.2",
+        "search_enabled": true,
+        "search_conditions": {
+          "collections": [
+            "hls-s30-002"
+          ],
+          "platforms": [
+            "sentinel-2a",
+            "sentinel-2b",
+            "sentinel-2c"
+          ],
+          "product_levels": [
+            "HLS v2.0 NBAR"
+          ],
+          "required_bands": [
+            "red",
+            "nir"
+          ]
+        }
+      }
+    ],
+    "assumptions": [
+      "\uad00\uce21 \uc2dc\uc810 \uc120\ud0dd \ubbf8\uc785\ub825: \ud55c \uc2dc\uc810 \uc0c1\ud0dc\ub85c \uac00\uc815\ud569\ub2c8\ub2e4.",
+      "\uad6c\ub984\u00b7\uc57c\uac04 \uc870\uac74 \ubbf8\uc785\ub825: \uad11\ud559\u00b7\uc9c0\ud45c\uc628\ub3c4 \ud6c4\ubcf4\ub294 \ub9d1\uc740 \uc8fc\uac04 \uad00\uce21\uc744 \uac00\uc815\ud569\ub2c8\ub2e4. \uc7a5\ub9c8\u00b7\ud64d\uc218\uc5d0\uc11c\ub294 SAR\ub97c \uc6b0\uc120 \uac80\ud1a0\ud569\ub2c8\ub2e4.",
+      "\ub300\uc0c1 \ud06c\uae30 \ubbf8\uc785\ub825: \uac1d\uccb4 \uc2dd\ubcc4 \uac00\ub2a5 \ud06c\uae30\ub97c \ud310\uc815\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4.",
+      "\uc9c1\uc811 \uc120\ud0dd \uac80\uc0c9\uc740 \uceec\ub809\uc158 \ucc38\uace0 \ud6c4\ubcf4\ub97c \ud3ec\ud568\ud569\ub2c8\ub2e4. \ubaa9\uc801 \uad00\uce21 \uc870\uac74 \ucda9\uc871\uc774\ub098 \ud544\uc218 \uc81c\ud488\u00b7\ubc34\ub4dc \ud655\uc778\uc744 \ubcf4\uc7a5\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4. \ucd94\ucc9c \uce74\ub4dc\uc758 \uc870\uac74 \uac80\uc0c9\uc744 \uc0ac\uc6a9\ud558\uba74 \ud574\ub2f9 \uba54\ud0c0\ub370\uc774\ud130 \uc870\uac74\uc73c\ub85c \uac70\ub985\ub2c8\ub2e4."
+    ],
+    "rule_version": "sensor-purpose-2026-10-30.2",
+    "checked_on": "2026-10-30",
+    "observation_requirement": "\uad11\ud559 \ub2e4\uc911\ubd84\uad11 \uc9c0\ud45c\ubc18\uc0ac\ub3c4"
+  },
+  "collections": [
+    "hls-l30-002",
+    "hls-s30-002"
+  ],
+  "query": {
+    "purpose": "",
+    "purpose_type": "vegetation",
+    "target_size_m": null,
+    "observation_need": "unspecified",
+    "temporal_mode": "unspecified",
+    "requested_resolution_m": null,
+    "max_scene_cloud_cover": null,
+    "requested_reference_date": null,
+    "analysis_target": null,
+    "recommendation_id": null,
+    "bbox": [
+      126.7,
+      36.4,
+      126.71,
+      36.41
+    ],
+    "start_date": "2025-07-20",
+    "end_date": "2025-07-26",
+    "collections": [
+      "hls-l30-002",
+      "hls-s30-002"
+    ],
+    "max_items": 25
+  },
+  "applied_recommendation": null,
+  "applied_conditions": null,
+  "ranking": "\uc13c\uc11c \uadf8\ub8f9\uc740 \ubaa9\uc801\ubcc4 \uace0\uc815 \ud0d0\uc0c9 \uc21c\uc11c\uc785\ub2c8\ub2e4. \uc601\uc0c1 \uc21c\uc704\ub294 \uadf8\ub8f9\uacfc \ub3c5\ub9bd\uc801\uc73c\ub85c \ud544\uc218 \ubc34\ub4dc \ud655\uc778 \u2192 AOI \uae30\ud558 \uc911\ucca9 \ub0b4\ub9bc\ucc28\uc21c \u2192 \uc7a5\uba74 \uad6c\ub984\ub7c9 \uc624\ub984\ucc28\uc21c \u2192 \uc81c\uacf5 \ud574\uc0c1\ub3c4 \ucd5c\uc19f\uac12 \u2192 \uc2dc\uc791\uc77c \ucc28\uc774 \u2192 \uceec\ub809\uc158\u00b7ID \uc21c\uc785\ub2c8\ub2e4. \ub204\ub77d\uac12\uc740 \uac01 \uae30\uc900\uc5d0\uc11c \ub9c8\uc9c0\ub9c9\uc785\ub2c8\ub2e4. \ud6c4\ubcf4 \ud0d0\uc0c9 \uaddc\uce59\uc774\uba70 \ud53d\uc140 \ud488\uc9c8\u00b7\uacfc\ud559\uc801 \uc801\ud569\uc131 \uc810\uc218\uac00 \uc544\ub2d9\ub2c8\ub2e4.",
+  "notice": "\ub3d9\uc77c AOI\u00b7UTC \uae30\uac04\uc73c\ub85c \uc81c\uacf5\ucc98\ub97c \ub3c5\ub9bd \ubcd1\ub82c \uac80\uc0c9\ud558\uace0 \uc81c\uacf5\ucc98\ubcc4 \uacb0\uacfc\ub97c \ubc88\uac08\uc544 \ucd1d 25\uac74\uae4c\uc9c0 \ubc18\ud658\ud569\ub2c8\ub2e4. Earth Search \ucd5c\ub30012\ud68c, \ub2e4\ub978 \uc81c\uacf5\ucc98 \uac014\ud68c; \uc81c\uacf5\ucc98\ubcc445\ucd08\u00b7\ud68c\ub2f910\ucd08\u00b7\ud398\uc774\uc9c025\uac74, \uc7ac\uc2dc\ub3c4 \uc5c6\uc74c. NOAA\ub294 \uacf5\uc2dd \uacf5\uac1c \uac1d\uccb4 \ubaa9\ub85d\uc744 \uc0ac\uc6a9\ud569\ub2c8\ub2e4. \ubbf8\uc870\ud68c \ud398\uc774\uc9c0\u00b7\uc804\uc5ed \ud55c\ub3c4\ub85c \ubbf8\ubc18\ud658\ud55c \ud6c4\ubcf4\ub97c \uc0c1\ud0dc\uc5d0 \ud45c\uc2dc\ud569\ub2c8\ub2e4. source live-stac\uc740 \ud638\ud658 \uac12\uc774\uba70 STAC \uc678 \uacb0\uacfc\ub3c4 \ud3ec\ud568\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4."
+}

@@ -1,0 +1,32 @@
+{
+  "id": "sgis-jeju-2025-q2",
+  "name": "제주특별자치도",
+  "code": "39",
+  "code_system": "SGIS SIDO_CD",
+  "mois_prefix": "50",
+  "year": "2025-06-30 (2025년 2분기)",
+  "source": "국가데이터처 SGIS 행정구역 통계 및 경계",
+  "source_url": "https://www.data.go.kr/data/15129688/fileData.do",
+  "download_url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003681593&fileDetailSn=1&dataNm=SGIS",
+  "terms": "공공데이터포털 이용허락범위 제한 없음 (2026-11-02 확인), 출처 표시",
+  "original_crs": "EPSG:5179",
+  "crs": "EPSG:4326",
+  "axis_order": "longitude, latitude",
+  "always_xy": true,
+  "original_component_sha256": {
+    ".shp": "8edb33f1f633002a41f9bc407943cbebf0c2d8d5b3c18bd3fa5eb41aabe7e77e",
+    ".dbf": "37584ab7f943cffb14f81f7ddde5284529d7e82644b667e88d70f5b3d116819a",
+    ".prj": "e21b26451491c617318aab7d28abf4d07f5facc2aed1564e082ec8d4268cfa3b",
+    ".cpg": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+  },
+  "source_archive_sha256": "f1cf0f9de453ac7eaacb273f39cee52851183372b9ddfda428a967c3a670b2c6",
+  "geojson_sha256": "cd97415eda2ae64a8552be3d96d74c0945ef38679286f16b795b32779c472062",
+  "bbox": [
+    126.14345549941781,
+    33.112355758732,
+    126.97265693471556,
+    34.013233386819344
+  ],
+  "area_km2": 1865.048865717521,
+  "note": "SGIS 통계서비스 경계, 2025년 2분기 자료. 법적 측량/최신 경계 확정 아님. 원본 꼭짓점 유지, 간소화 없음."
+}

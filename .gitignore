@@ -1,0 +1,34 @@
+node_modules/
+.next/
+.next-conditions/
+.next-conditions-final/
+.venv/
+__pycache__/
+.pytest_cache/
+*.tsbuildinfo
+.env*
+!.env.example
+test-results/
+test-results-conditions/
+test-results-conditions-download/
+test-results-workflow*/
+playwright-report/
+logs/
+frontend/public/maplibre/
+
+test-results-nl-camera*/
+
+# Canonical server secrets; examples must contain no real credentials.
+/backend/.env
+/backend/.private/
+
+# Local scratch data and generated analysis archives.
+.tmp/
+*.log
+*.sqlite
+*.sqlite3
+*.db
+examples/*.zip
+.next*/
+test-results*/
+.pytest-*/
