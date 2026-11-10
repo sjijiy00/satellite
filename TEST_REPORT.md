@@ -1,3 +1,18 @@
+## Cloudflare Pages 정적 빌드와 API 전달 — 2026-11-10
+
+`frontend`의 `npm run build`를 Pages 정적 export + advanced-mode Worker 패키징으로 변경했다. `out/index.html`, `processing.html`, 지도 worker, `_worker.js`, `_routes.json` 생성을 확인했다. 로컬 `npm run dev`는 기존 Next.js rewrites를 유지하며 서버용 빌드는 `npm run build:server`로 분리했다. 공개 익명 미디어/작업의 사이트 확인에 정확한 HTTPS `PUBLIC_APP_ORIGIN`을 추가했다. 실제 `.env`와 주소·CORS·도메인은 변경하지 않았다. [배포 인계](docs/CLOUDFLARE_PAGES.md).
+
+- `npm.cmd run build`: **exit 0**, TypeScript 포함 통과, `out` 생성.
+- `NEXT_DIST_DIR=.next-pages-server-check npm.cmd run build:server` (PowerShell 환경변수 방식): **exit 0**, TypeScript 포함 통과. 검사 과정에서 Next.js가 자동 수정한 next-env/tsconfig는 원복했다.
+- `npm.cmd run test:pages`: **6 passed**. TEST ONLY transport로 경로/쿼리/POST/쿠키/Origin/바이너리/리다이렉트/실패 상태·설정 누락 검사. 실제 Lightsail 연결은 아님.
+- backend `pytest tests/test_public_site.py tests/test_media_access.py tests/test_work_sessions.py -q`: **43 passed**, 외부 제공처/자격증명 미사용. 기존 Starlette TestClient deprecation warning 1건.
+- `node --test scripts/server-env.test.mjs`: **19 passed**.
+- Windows Next 16.4 export가 중첩 RSC segment 파일을 역슬래시 기반 경로로 생성하는 문제를 확인했다. Windows 빌드에 한해서 브라우저가 요청하는 점 구분 파일명 별칭을 복사하도록 보완했다. 최종 정적 build 재통과, Pages 로컬 런타임의 `pages-export.spec.ts` **1 passed**: 직접 진입·왕복 이동·새로고침 및 RSC 404 없음. 기존 12개와 합쳐 브라우저 검증 13개.
+- 실제 Pages 로컬 런타임 `wrangler 4.159.0 pages dev out --port 8790 --ip 127.0.0.1`: Worker 컴파일 성공. `/processing` **200**, 환경변수 없는 `/api/health` **503 API_NOT_CONFIGURED** 확인.
+- 해당 정적 결과물을 대상으로 Playwright `workflow-pages.spec.ts`, `imagery-explorer.spec.ts`: **12개 통과** (최초 10 passed/2 failed → 두 실패 수정 후 2 passed). 실패는 기존 다운로드 details의 중첩 summary 때문에 locator가 3개 요소를 선택한 것으로, 직접 자식 summary로 한정했다. API는 `E2E_API_BASE_URL=http://127.0.0.1:8123`의 격리 로컬 백엔드와 TEST ONLY fixture를 사용했으며 Worker를 통한 실제 Lightsail 성공을 의미하지 않는다. 지도 AOI/촬영 범위, 검색 결과, 날짜·선택·비교, `/processing` 이동/새로고침, 다운로드 fixture 흐름 확인.
+
+실제 Cloudflare 배포/푸시 및 Lightsail HTTPS·원본 전송은 미수행이다. 공개 백엔드 주소가 아직 제공되지 않았다. Pages `API_BASE_URL`, Lightsail `PUBLIC_APP_ORIGIN` 환경변수와 백엔드 코드 반영 후 운영 검증이 필요하다. 공개 Earthdata OAuth와 Linux의 운영자 자격증명 지원을 추가한 것이 아니다. LIVE_STAC 및 유료 AI 호출 없음.
+
 ## 다운로드 부가설명 축약 — 2026-11-09
 
 사용자 지정 영역의 원본 접근 설명은 짧은 안내만 표시하고 전송 한도·접근 갱신 및 제공처 링크·밴드 추천 버전은 기본 닫힌 details로 이동했다. 버튼·실패 표시·전송 로직은 유지했다. TypeScript와 격리 production build 통과 (`test-results/download-copy-build.log`). 이번 문구 변경에서 실제 원본 다운로드나 유료 AI 호출은 하지 않았다.

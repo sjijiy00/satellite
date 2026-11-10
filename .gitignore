@@ -1,4 +1,6 @@
 node_modules/
+frontend/out/
+frontend/.wrangler/
 .next/
 .next-conditions/
 .next-conditions-final/

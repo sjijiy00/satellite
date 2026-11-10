@@ -10,6 +10,7 @@ import re
 import secrets
 import time
 from fastapi import HTTPException
+from .public_site import public_origin
 
 COOKIE='satellite_work_session'
 from .processing_repository import session_key
@@ -31,6 +32,7 @@ def identity(request,create=False):
 def protect(request):
     origin=request.headers.get('origin')
     allowed={str(request.base_url).rstrip('/'),os.getenv('OPERATOR_PUBLIC_ORIGIN','http://127.0.0.1:3000').rstrip('/')}
+    if public_origin():allowed.add(public_origin())
     if origin and origin not in allowed:raise HTTPException(403,'다른 사이트에서 작업을 변경할 수 없습니다.')
 
 

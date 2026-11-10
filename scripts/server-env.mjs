@@ -3,6 +3,7 @@ import path from 'node:path';
 import {parseEnv} from 'node:util';
 
 export const SERVER_ENV_NAMES = Object.freeze([
+  'PUBLIC_APP_ORIGIN',
   'AI_NL_ENABLED', 'AI_NL_PROVIDER', 'AI_NL_MODEL', 'OPENAI_API_KEY',
   'AI_NL_INPUT_USD_PER_MILLION', 'AI_NL_OUTPUT_USD_PER_MILLION',
   'AI_NL_TIMEOUT_SECONDS', 'AI_NL_MAX_OUTPUT_TOKENS', 'AI_NL_REQUESTS_PER_MINUTE', 'AI_NL_REQUESTS_PER_PROCESS',

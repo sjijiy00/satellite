@@ -21,7 +21,7 @@ async function setup(page:Page){
 }
 async function acquire(page:Page,index:number,green=false){
  const card=page.getByTestId('scene-card').nth(index);const details=card.locator('.asset-downloads');
- if(!await details.evaluate(e=>(e as HTMLDetailsElement).open))await details.locator('summary').click();
+ if(!await details.evaluate(e=>(e as HTMLDetailsElement).open))await details.locator(':scope > summary').click();
  if(green)await card.getByTestId('band-green').check();
  await card.getByRole('button',{name:'선택 원본 접근 확인',exact:true}).click();
  const buttons=card.getByRole('button',{name:'원본 다운로드',exact:true});await expect(buttons.first()).toBeEnabled();

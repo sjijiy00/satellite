@@ -6,7 +6,10 @@
     "predev": "node scripts/copy-map-worker.mjs",
     "prebuild": "node scripts/copy-map-worker.mjs",
     "dev": "next dev --webpack --hostname 127.0.0.1",
-    "build": "next build --webpack",
+    "build": "node scripts/build-pages.mjs",
+    "prebuild:server": "node scripts/copy-map-worker.mjs",
+    "build:server": "next build --webpack",
+    "test:pages": "node --test tests/pages-proxy.test.mjs",
     "start": "next start --hostname 127.0.0.1",
     "typecheck": "tsc --noEmit",
     "test:e2e": "playwright test"

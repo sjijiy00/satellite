@@ -178,11 +178,13 @@ def same_origin(request):
     if config:
         valid=origin==config.origin
     else:
-        # Without OAuth settings there are no private credentials; allow local dev
-        # origins only (including isolated verification ports), never public sites.
+        # Public anonymous media access requires an explicitly configured site.
+        # This does not enable public OAuth or operator credential storage.
+        from .public_site import public_origin
         try:
             parsed=urlsplit(origin)
-            valid=parsed.scheme in ('http','https') and parsed.hostname in ('127.0.0.1','localhost') and not parsed.username and not parsed.password
+            public_valid=bool(public_origin()) and origin==public_origin()
+            valid=public_valid or (parsed.scheme in ('http','https') and parsed.hostname in ('127.0.0.1','localhost') and not parsed.username and not parsed.password)
         except ValueError:valid=False
     if not valid:raise HTTPException(403,'사이트에서 다시 시도하세요.')
 
