@@ -35,6 +35,21 @@ install_log_safety()
 app = FastAPI(title='Satellite Insight AI', version='0.1.0')
 
 
+from fastapi.middleware.cors import CORSMiddleware
+from .public_site import public_origin
+
+# 기존 app = FastAPI(...) 아래에 추가
+origin = public_origin()
+if origin:
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=[origin],
+        allow_credentials=True,
+        allow_methods=["GET", "POST", "HEAD", "OPTIONS"],
+        allow_headers=["Content-Type", "Authorization", "Range"],
+        expose_headers=["Content-Disposition"],
+    )
+
 @app.get('/places/config')
 async def place_config():
     return JSONResponse(place_search.config(),headers={'Cache-Control':'no-store'})
